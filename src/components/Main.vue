@@ -136,7 +136,7 @@
     <b-container v-if="tab === 4" class="container-fluid" fluid>
       <div class="row" style="justify-content: center;">
         <div class="col-md-6">
-          <b-media v-if="showAll" class="m-4 p-5" @click="showFirst = true; showAll = false">
+          <b-media v-if="showAll" class="m-4 p-5">
             <h3 class="mt-0 m-3">Contact</h3>
             <b-form>
               <b-form-group id="exampleInputGroup1" label="Email address:" label-for="exampleInput1">
