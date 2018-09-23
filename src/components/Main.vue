@@ -20,23 +20,24 @@
     <b-container v-if="tab === 1" class="container-fluid" fluid>
       <div class="row">
         <div class="col-md-6">
-          <b-jumbotron header="“" lead="Recognizing the need is the primary condition for design.">
-            <p> - Charles Eames</p>
+          <b-jumbotron header="“" lead="Recognizing the need is the primary condition for design." class="quote">
+            <p class="bold-p"> - Charles Eames</p>
           </b-jumbotron>
         </div>
         <div class="col-md-6">
-          <b-jumbotron header="Ajla Cano" lead="UX Engineer">
-            <p>For more information visit website</p>
-            <b-btn class="submit" @click="tab = 4">Contact</b-btn>
+          <b-jumbotron class="landing-profile" header="Ajla" lead="Cano">
+            <p>UX Engineer</p>
+            <div class="container">
+              <a class="gradient-button" @click="tab = 4"><span>Contact</span></a>
+            </div>
           </b-jumbotron>
           <div class="social-group">
-            <img class="social-icon" src="https://image.flaticon.com/icons/svg/149/149441.svg" /> Gothenburg, Sweden<br>
-            <img class="social-icon" src="https://image.flaticon.com/icons/svg/131/131155.svg" /> ajla.cano@gmail.com<br>
+            <img @click="tab = 4" class="social-icon" src="https://image.flaticon.com/icons/svg/131/131155.svg" /><br>
             <a href="https://instagram.com/ajlacreations">
-              <img class="social-icon" src="https://image.flaticon.com/icons/svg/1077/1077042.svg" /> @ajlascreations<br>
+              <img class="social-icon" src="https://image.flaticon.com/icons/svg/1077/1077042.svg" /><br>
             </a>
             <a href="https://www.linkedin.com/in/ajla-cano/">
-              <img class="social-icon" src="https://image.flaticon.com/icons/svg/134/134046.svg" /> /ajla-cano<br>
+              <img class="social-icon" src="https://image.flaticon.com/icons/svg/134/134046.svg" /><br>
             </a>
           </div>
         </div>
@@ -55,11 +56,13 @@
             which can then influence the user in a positive and productive way.
           </div>
           <div>
-            <button class="submit">Download CV</button>
+            <div class="container">
+              <a class="gradient-button" href="https://github.com/AjlaC/ajlac.github.io/raw/master/pdf/ajlacanoCV.pdf" download><span>Download</span></a>
+            </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <b-jumbotron header="" lead=" ">
+          <b-jumbotron header=" " lead="Timeline">
             <light-timeline :items='items'></light-timeline>
           </b-jumbotron>
         </div>
@@ -68,91 +71,85 @@
 
     <b-container v-if="tab === 3" class="container-fluid" fluid>
       <div class="row" style="justify-content: center;">
-        <transition name="fadeLeftBig">
-          <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showFirst = true; showAll = false">
-            <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/easycube.png?raw=true" />
-            <h5 class="mt-0">Tork EasyCube Dashboard</h5>
-            <p class="mb-0">
-              Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-          </b-media>
-        </transition>
+        <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showFirst = true; showAll = false">
+          <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/easycube.png?raw=true" />
+          <h5 class="mt-0">Tork EasyCube Dashboard</h5>
+          <p class="mb-0">
+            Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </p>
+        </b-media>
 
-        <transition name="fadeLeftBig">
-          <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showSecond = true; showAll = false">
-            <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" />
-            <h5 class="mt-0">Status table</h5>
-            <p class="mb-0">
-              Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-          </b-media>
-        </transition>
+        <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showSecond = true; showAll = false">
+          <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" />
+          <h5 class="mt-0">Status table</h5>
+          <p class="mb-0">
+            Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </p>
+        </b-media>
 
-        <transition name="fadeLeftBig">
-          <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showThird = true; showAll = false">
-            <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/LITTT.png?raw=true" />
-            <h5 class="mt-0">Lit!</h5>
-            <p class="mb-0">
-              Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-          </b-media>
-        </transition>
+        <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showThird = true; showAll = false">
+          <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/LITTT.png?raw=true" />
+          <h5 class="mt-0">Lit!</h5>
+          <p class="mb-0">
+            Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </p>
+        </b-media>
 
-        <transition name="fadeLeftBig">
-          <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showFourth = true; showAll = false">
-            <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/RC-intro.png?raw=true" />
-            <h5 class="mt-0">Remote classroom</h5>
-            <p class="mb-0">
-              Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-          </b-media>
-        </transition>
+        <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showFourth = true; showAll = false">
+          <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/RC-intro.png?raw=true" />
+          <h5 class="mt-0">Remote classroom</h5>
+          <p class="mb-0">
+            Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </p>
+        </b-media>
       </div>
 
-        <div class="row" v-if="showFirst">
-          <div class="col-md-12">
-            <img class="back-icon" @click="showFirst = false; showAll = true" src="https://image.flaticon.com/icons/svg/118/118739.svg">
-            <h2> Tork EasyCube Dashboard </h2>
-          </div>
+      <div class="row" v-if="showFirst">
+        <div class="col-md-12">
+          <img class="back-icon" @click="showFirst = false; showAll = true" src="https://image.flaticon.com/icons/svg/118/118739.svg">
+          <h2> Tork EasyCube Dashboard </h2>
         </div>
+      </div>
 
-        <div class="row" v-if="showSecond">
-          <div class="col-md-12">
-            <img class="back-icon" @click="showSecond = false; showAll = true" src="https://image.flaticon.com/icons/svg/118/118739.svg">
-            <h2> Status table </h2>
-          </div>
+      <div class="row" v-if="showSecond">
+        <div class="col-md-12">
+          <img class="back-icon" @click="showSecond = false; showAll = true" src="https://image.flaticon.com/icons/svg/118/118739.svg">
+          <h2> Status table </h2>
         </div>
+      </div>
 
-        <div class="row" v-if="showThird">
-          <div class="col-md-12">
-            <img class="back-icon" @click="showThird = false; showAll = true" src="https://image.flaticon.com/icons/svg/118/118739.svg">
-            <h2> Lit! </h2>
-          </div>
+      <div class="row" v-if="showThird">
+        <div class="col-md-12">
+          <img class="back-icon" @click="showThird = false; showAll = true" src="https://image.flaticon.com/icons/svg/118/118739.svg">
+          <h2> Lit! </h2>
         </div>
+      </div>
 
-        <div class="row" v-if="showFourth">
-          <div class="col-md-12">
-            <img class="back-icon" @click="showFourth = false; showAll = true" src="https://image.flaticon.com/icons/svg/118/118739.svg">
-            <h2> Remote classroom </h2>
-          </div>
+      <div class="row" v-if="showFourth">
+        <div class="col-md-12">
+          <img class="back-icon" @click="showFourth = false; showAll = true" src="https://image.flaticon.com/icons/svg/118/118739.svg">
+          <h2> Remote classroom </h2>
         </div>
+      </div>
     </b-container>
 
     <b-container v-if="tab === 4" class="container-fluid" fluid>
       <div class="row" style="justify-content: center;">
         <div class="col-md-4">
-          <b-form @submit="onSubmit">
+          <b-form>
             <b-form-group id="exampleInputGroup1" label="Email address:" label-for="exampleInput1">
               <b-form-input id="exampleInput1" type="email" v-model="form.email" required placeholder="Enter email">
               </b-form-input>
             </b-form-group>
             <b-form-group id="exampleInputGroup2" label="Topic:" label-for="exampleInput2">
-              <b-form-input id="exampleInput2" type="text" v-model="form.name" required placeholder="Enter topic">
+              <b-form-input id="exampleInput2" type="text" v-model="form.topic" required placeholder="Enter topic">
               </b-form-input>
             </b-form-group>
-            <b-form-textarea id="textarea1" v-model="text" placeholder="" :rows="3" :max-rows="6">
+            <b-form-textarea id="textarea1" v-model="form.text" placeholder="" :rows="3" :max-rows="6">
             </b-form-textarea>
-            <b-button type="submit" class="submit">Submit</b-button>
+            <div class="container">
+              <a class="gradient-button" @click="sendEmail()"><span>Submit</span></a>
+            </div>
           </b-form>
         </div>
       </div>
@@ -162,6 +159,7 @@
 
 <script>
   require('vue2-animate/dist/vue2-animate.min.css')
+  import * as api from '../api'
 
   export default {
     name: 'app',
@@ -199,20 +197,20 @@
         ],
         form: {
           email: '',
-          name: '',
-          food: null,
-          checked: []
+          topic: '',
+          text: ''
         },
-        foods: [{
-            text: 'Select One',
-            value: null
-          },
-          'Carrots', 'Beans', 'Tomatoes', 'Corn'
-        ]
       }
     },
     created() {},
-    methods: {}
+    methods: {
+       async sendEmail() {
+        var response = await api.sendEmail(this.form.email, this.form.topic, 'Here you go madafaka, new interest!' + this.form.text)
+        if (response.status === 200) {
+          window.location.reload();
+        }
+      }
+    }
   }
 </script>
 
@@ -249,20 +247,50 @@
   }
 
   .social-group {
-    text-align: left;
-    width: 40%;
-    margin: 0 auto;
-    >img {
+    position: absolute;
+    right: 0;
+    top: 65vh;
+    img {
       margin-right: 8px;
     }
   }
 
   .social-icon {
-    width: 18px;
+    opacity: 0.87;
+    height: auto;
+    width: 22px;
+    margin-bottom: 24px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+      opacity: 0.56;
+      cursor: pointer;
+    }
   }
 
   .back-icon {
     float: left;
     width: 18px;
+  }
+
+  .quote {
+    width: 80%;
+    .lead {
+      font-style: italic;
+      font-size: 40px;
+    }
+  }
+
+  .bold-p {
+    font-weight: 500;
+  }
+
+  .landing-profile {
+    .display-3 {
+      font-size: 48px;
+      font-weight: 600;
+    }
+    .lead {
+      font-size: 84px;
+    }
   }
 </style>

@@ -12,27 +12,38 @@
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Lato');
-
-  .submit {
-    display: block;
+  .gradient-button {
+    background: linear-gradient(to right top, #c36ca1, #b882c0, #a997d8, #9aace7, #90beef);
+    border-radius: 100px;
+    display: inline-block;
+    padding: 1px;
+    text-decoration: none;
     margin: 30px auto;
-    height: 38px;
-    padding: 0 30px;
-    line-height: 38px;
     text-transform: uppercase;
-    background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid #bbb;
-    cursor: pointer;
-    letter-spacing: 0.1rem;
-    transition: all ease-in 0.2s;
     color: rgba(0, 0, 0, 0.87);
-    outline: none;
-    &:focus {
-      outline: none;
-    }
+    transition: all ease-in 0.2s;
+  }
+
+  .gradient-button span {
+    background: #fff;
+    display: block;
+    border-radius: 80px;
+    padding: 0 30px;
+    height: 38px;
+    line-height: 38px;
     &:hover {
-      border-color: rgb(134, 134, 134);
+      background: rgba(255,255,255,0.93)
+    }
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 30px;
+    a {
+      &:hover {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.56);
+      }
     }
   }
 
