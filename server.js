@@ -7,25 +7,25 @@ const app = express()
 var apiRouter = express.Router()
 
 apiRouter.get('/postmaster/:name/:email/:message', (req, res, next) => {
-    var apiKey = 'key-2d38923f671398e1c7b4dcecdf9b9785-0e6e8cad-65420a29'
-    var domain = 'sandbox39f0910079cf49c6bf7c6ac661cf175f.mailgun.org'
-    var mailgun = require('mailgun-js')({apiKey: apiKey, domain: domain})
+    var apiKey = 'key-d3b5ee1965da4ee91df34f25693c9d31'
+    var domain = 'sandbox2f72beb589cd46e78ebff2f5ea6ad23b.mailgun.org'
+    var mailgun = require('mailgun-js')({
+        apiKey: apiKey,
+        domain: domain
+    })
 
     var data = {
-        from: 'Excited Customer <postmaster@sandbox39f0910079cf49c6bf7c6ac661cf175f.mailgun.org' +
-                '>',
+        from: 'Excited Customer <postmaster@sandbox2f72beb589cd46e78ebff2f5ea6ad23b.mailgun.org>',
         to: 'cano.ajla@gmail.com',
         subject: 'from customer: ' + req.params.name + ' with email: ' + req.params.email,
         text: req.params.message
     }
 
-    mailgun
-        .messages()
-        .send(data, function (error, body) {
-            if (error) {
-                console.log(error)
-            }
-        })
+    mailgun.messages().send(data, function (error, body) {
+        if (error) {
+            console.log(error)
+        }
+    })
     res.status(200);
     res.send('Gj m8');
 })

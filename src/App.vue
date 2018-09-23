@@ -18,10 +18,12 @@
     display: inline-block;
     padding: 1px;
     text-decoration: none;
-    margin: 30px auto;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.87);
     transition: all ease-in 0.2s;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .gradient-button span {

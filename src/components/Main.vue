@@ -3,7 +3,7 @@
     <div>
       <b-navbar class="b-navbar" toggleable="md" type="light" variant="light">
 
-        <b-navbar-brand href="#">AjlaC</b-navbar-brand>
+        <b-navbar-brand href="#" style="color: rgba(255,255,255,0.87)">AjlaC</b-navbar-brand>
 
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
         <b-collapse is-nav id="nav_collapse">
@@ -26,7 +26,9 @@
         </div>
         <div class="col-md-6">
           <b-jumbotron class="landing-profile" header="Ajla" lead="Cano">
-            <p>UX Engineer</p>
+            <h4>UX Engineer</h4>
+            <p>I'm Ajla Cano, a Gothenburg based UX Engineer. I'm design focused and process driven when it comes to powerful and elegant technology.
+            </p>
             <div class="container">
               <a class="gradient-button" @click="tab = 4"><span>Contact</span></a>
             </div>
@@ -46,19 +48,17 @@
 
     <b-container v-if="tab === 2" class="container-fluid" fluid>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 about">
           <img class="profile-pic" src="https://media.licdn.com/dms/image/C5603AQFcYINCf49DyA/profile-displayphoto-shrink_800_800/0?e=1543449600&v=beta&t=E4Bupq8ix0SeJzni8a4PZl8oL4SeIoxQL_zhc9kP5yY" />
-          <div>
+          <div class="text">
             I'm a Gothenburg based UX engineer and Interaction designer who is passionate about solving real-life problems between people and technology, using interaction design as my main tool.
             <br><br>My main goal when designing is to build a better understanding between the user and the product while at the same time creating engaging experiences. I constantly try to challenge my creativity around existing constraints in a project
             and see that as a opportunity to learn even more and grow as an interaction designer.
             <br><br>During a design process, my favorite parts are the challenges that come with the problem solving. I’m a believer in finding the best solutions when getting out of your comfort zone. A feeling I enjoy is the eagerness to solve a problem
             which can then influence the user in a positive and productive way.
           </div>
-          <div>
-            <div class="container">
-              <a class="gradient-button" href="https://github.com/AjlaC/ajlac.github.io/raw/master/pdf/ajlacanoCV.pdf" download><span>Download</span></a>
-            </div>
+          <div class="container">
+            <a class="gradient-button" href="https://github.com/AjlaC/ajlac.github.io/raw/master/pdf/ajlacanoCV.pdf" download><span>Download</span></a>
           </div>
         </div>
         <div class="col-sm-6">
@@ -71,7 +71,7 @@
 
     <b-container v-if="tab === 3" class="container-fluid" fluid>
       <div class="row" style="justify-content: center;">
-        <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showFirst = true; showAll = false">
+        <b-media v-if="showAll" class="col-md-8 m-3 p-3" @click="showFirst = true; showAll = false">
           <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/easycube.png?raw=true" />
           <h5 class="mt-0">Tork EasyCube Dashboard</h5>
           <p class="mb-0">
@@ -79,7 +79,7 @@
           </p>
         </b-media>
 
-        <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showSecond = true; showAll = false">
+        <b-media v-if="showAll" class="col-md-8 m-3 p-3" @click="showSecond = true; showAll = false">
           <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" />
           <h5 class="mt-0">Status table</h5>
           <p class="mb-0">
@@ -87,7 +87,7 @@
           </p>
         </b-media>
 
-        <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showThird = true; showAll = false">
+        <b-media v-if="showAll" class="col-md-8 m-3 p-3" @click="showThird = true; showAll = false">
           <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/LITTT.png?raw=true" />
           <h5 class="mt-0">Lit!</h5>
           <p class="mb-0">
@@ -95,7 +95,7 @@
           </p>
         </b-media>
 
-        <b-media v-if="showAll" class="col-md-8 m-4 p-3" @click="showFourth = true; showAll = false">
+        <b-media v-if="showAll" class="col-md-8 m-3 p-3" @click="showFourth = true; showAll = false">
           <b-img slot="aside" alt="placeholder" fluid src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/RC-intro.png?raw=true" />
           <h5 class="mt-0">Remote classroom</h5>
           <p class="mb-0">
@@ -135,22 +135,25 @@
 
     <b-container v-if="tab === 4" class="container-fluid" fluid>
       <div class="row" style="justify-content: center;">
-        <div class="col-md-4">
-          <b-form>
-            <b-form-group id="exampleInputGroup1" label="Email address:" label-for="exampleInput1">
-              <b-form-input id="exampleInput1" type="email" v-model="form.email" required placeholder="Enter email">
-              </b-form-input>
-            </b-form-group>
-            <b-form-group id="exampleInputGroup2" label="Topic:" label-for="exampleInput2">
-              <b-form-input id="exampleInput2" type="text" v-model="form.topic" required placeholder="Enter topic">
-              </b-form-input>
-            </b-form-group>
-            <b-form-textarea id="textarea1" v-model="form.text" placeholder="" :rows="3" :max-rows="6">
-            </b-form-textarea>
-            <div class="container">
-              <a class="gradient-button" @click="sendEmail()"><span>Submit</span></a>
-            </div>
-          </b-form>
+        <div class="col-md-6">
+          <b-media v-if="showAll" class="m-4 p-5" @click="showFirst = true; showAll = false">
+            <h3 class="mt-0 m-3">Contact</h3>
+            <b-form>
+              <b-form-group id="exampleInputGroup1" label="Email address:" label-for="exampleInput1">
+                <b-form-input id="exampleInput1" type="email" v-model="form.email" required placeholder="Enter email">
+                </b-form-input>
+              </b-form-group>
+              <b-form-group id="exampleInputGroup2" label="Topic:" label-for="exampleInput2">
+                <b-form-input id="exampleInput2" type="text" v-model="form.topic" required placeholder="Enter topic">
+                </b-form-input>
+              </b-form-group>
+              <b-form-textarea id="textarea1" v-model="form.text" placeholder="" :rows="3" :max-rows="6">
+              </b-form-textarea>
+              <div class="container">
+                <a class="gradient-button" @click="sendEmail()"><span>Submit</span></a>
+              </div>
+            </b-form>
+          </b-media>
         </div>
       </div>
     </b-container>
@@ -204,7 +207,7 @@
     },
     created() {},
     methods: {
-       async sendEmail() {
+      async sendEmail() {
         var response = await api.sendEmail(this.form.email, this.form.topic, 'Here you go madafaka, new interest!' + this.form.text)
         if (response.status === 200) {
           window.location.reload();
@@ -215,10 +218,6 @@
 </script>
 
 <style lang="scss">
-  .container-fluid {
-    padding: 36px;
-  }
-
   .navbar {
     background-color: transparent !important;
   }
@@ -229,11 +228,12 @@
 
   .profile-pic {
     border-radius: 50%;
-    max-width: 225px;
+    max-width: 150px;
     margin-bottom: 20px;
   }
 
   .media {
+    background: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     &:hover {
@@ -273,6 +273,7 @@
   }
 
   .quote {
+    color: rgba(255, 255, 255, 0.87);
     width: 80%;
     .lead {
       font-style: italic;
@@ -291,6 +292,20 @@
     }
     .lead {
       font-size: 84px;
+      margin-bottom: 40px;
     }
+  }
+
+  .about {
+    color: rgba(255,255,255,0.87);
+
+    .text {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+
+  .line-item {
+    padding: 2.5rem !important;
   }
 </style>
