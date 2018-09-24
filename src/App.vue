@@ -12,6 +12,14 @@
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Lato');
+
+  body {
+    // background: linear-gradient(to right top, #c36ca1, #b882c0, #a997d8, #9aace7, #90beef 25%, #ffffff 50%);
+    background: url('https://github.com/AjlaC/portfolio/blob/master/ajlac2.png?raw=true');
+    background-size: 100%;
+    // background: linear-gradient(90deg, rgba(0,0,0,0.87) 50%, #F8F9FB 50%);
+  }
+
   .gradient-button {
     background: linear-gradient(to right top, #c36ca1, #b882c0, #a997d8, #9aace7, #90beef);
     border-radius: 100px;
@@ -34,7 +42,7 @@
     height: 38px;
     line-height: 38px;
     &:hover {
-      background: rgba(255,255,255,0.93)
+      background: rgba(255, 255, 255, 0.93)
     }
   }
 
@@ -55,19 +63,6 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-  }
-
-  .card {
-    border: none;
-    border-radius: 0px;
-    margin: 4vh;
-    padding: 0px;
-    width: 85vw;
-    min-height: 80vh;
-    box-shadow: 0 3px 8px 0 rgba(68, 45, 45, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    h2 {
-      margin-bottom: 20px;
-    }
   }
 
   h1,

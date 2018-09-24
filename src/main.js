@@ -5,6 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import router from './router';
 import LightTimeline from 'vue-light-timeline';
+import VModal from 'vue-js-modal';
+
+Vue.use(VModal, { dialog: true })
 
 Vue.use(LightTimeline);
 
