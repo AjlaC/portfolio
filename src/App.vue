@@ -15,7 +15,7 @@
 
   body {
     // background: linear-gradient(to right top, #c36ca1, #b882c0, #a997d8, #9aace7, #90beef 25%, #ffffff 50%);
-    background: url('https://github.com/AjlaC/portfolio/blob/master/ajlac2.png?raw=true');
+    // background: url('https://github.com/AjlaC/portfolio/blob/master/ajlac2.png?raw=true');
     background-size: 100%;
     // background: linear-gradient(90deg, rgba(0,0,0,0.87) 50%, #F8F9FB 50%);
   }
@@ -48,7 +48,6 @@
 
   .container {
     text-align: center;
-    margin-top: 30px;
     a {
       &:hover {
         text-decoration: none;

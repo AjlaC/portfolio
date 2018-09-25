@@ -51,14 +51,14 @@
     </b-container>
 
     <b-container v-if="tab === 2" class="container-fluid" fluid>
-      <div class="row">
+      <h1>About me</h1>
+      <div class="row" style="justify-content: center;">
         <div class="col-sm-6">
-          <b-jumbotron header=" " lead="Timeline">
-            <light-timeline :items='items'></light-timeline>
-          </b-jumbotron>
+          <img class="profile-pic img-thumbnail" src="https://media.licdn.com/dms/image/C5603AQFcYINCf49DyA/profile-displayphoto-shrink_800_800/0?e=1543449600&v=beta&t=E4Bupq8ix0SeJzni8a4PZl8oL4SeIoxQL_zhc9kP5yY" />
         </div>
+      </div>
+      <div class="row" style="justify-content: center;">
         <div class="col-sm-6 about">
-          <img class="profile-pic" src="https://media.licdn.com/dms/image/C5603AQFcYINCf49DyA/profile-displayphoto-shrink_800_800/0?e=1543449600&v=beta&t=E4Bupq8ix0SeJzni8a4PZl8oL4SeIoxQL_zhc9kP5yY" />
           <div class="text">
             I'm a Gothenburg based UX engineer and Interaction designer who is passionate about solving real-life problems between people and technology, using interaction design as my main tool.
             <br>
@@ -68,6 +68,14 @@
             <br>During a design process, my favorite parts are the challenges that come with the problem solving. I’m a believer in finding the best solutions when getting out of your comfort zone. A feeling I enjoy is the eagerness to solve a problem which
             can then influence the user in a positive and productive way.
           </div>
+        </div>
+        <div class="col-sm-6">
+          <b-jumbotron header=" " lead="My journey into Interaction Design">
+            <light-timeline :items='items'></light-timeline>
+          </b-jumbotron>
+          <p class="small-italic">
+            For more detailed information download CV:
+          </p>
           <div class="container">
             <a class="gradient-button" href="https://github.com/AjlaC/ajlac.github.io/raw/master/pdf/ajlacanoCV.pdf" download>
               <span>Download</span>
@@ -78,6 +86,7 @@
     </b-container>
 
     <b-container v-if="tab === 3" class="container-fluid" fluid>
+      <h1>Portfolio</h1>
       <div class="row" style="justify-content: center;">
 
         <div class="col-md-4">
@@ -88,8 +97,8 @@
           </b-card>
           <modal :adaptive="true" name="easy-cube">
             <button class="button button--modal_close p-3" @click="hide()">
-                                                            <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                                                        </button>
+                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                </button>
           </modal>
         </div>
 
@@ -101,8 +110,8 @@
           </b-card>
           <modal :adaptive="true" name="lit">
             <button class="button button--modal_close p-3" @click="hide()">
-                                                            <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                                                        </button>
+                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                </button>
           </modal>
         </div>
 
@@ -114,8 +123,8 @@
           </b-card>
           <modal :adaptive="true" name="rc-intro">
             <button class="button button--modal_close p-3" @click="hide()">
-                                                            <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                                                        </button>
+                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                </button>
           </modal>
         </div>
 
@@ -127,8 +136,34 @@
           </b-card>
           <modal :adaptive="true" name="status-table">
             <button class="button button--modal_close p-3" @click="hide()">
-                                                            <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                                                        </button>
+                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                </button>
+          </modal>
+        </div>
+
+        <div class="col-md-4">
+          <b-card title="Status Table" @click="show('status-table')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" img-alt="Image" img-top tag="article" style="max-width: 20rem;">
+            <p class="card-text">
+              Design
+            </p>
+          </b-card>
+          <modal :adaptive="true" name="status-table">
+            <button class="button button--modal_close p-3" @click="hide()">
+                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                </button>
+          </modal>
+        </div>
+
+        <div class="col-md-4">
+          <b-card title="Status Table" @click="show('status-table')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" img-alt="Image" img-top tag="article" style="max-width: 20rem;">
+            <p class="card-text">
+              Design
+            </p>
+          </b-card>
+          <modal :adaptive="true" name="status-table">
+            <button class="button button--modal_close p-3" @click="hide()">
+                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                </button>
           </modal>
         </div>
 
@@ -136,10 +171,10 @@
     </b-container>
 
     <b-container v-if="tab === 4" class="container-fluid " fluid>
+      <h1>Contact</h1>
       <div class="row" style="justify-content: center;">
         <div class="col-md-6">
           <b-media class="m-4 p-5">
-            <h3 class="mt-0 m-3">Contact</h3>
             <div class="contact-social-group">
               <img @click="tab = 4" class="social-icon" src="https://image.flaticon.com/icons/svg/131/131155.svg" />
               <a href="https://instagram.com/ajlacreations">
@@ -256,9 +291,7 @@
 
   .card {
     border: none;
-    img {
-      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    }
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     &:hover {
       opacity: 0.87;
     }
@@ -269,13 +302,13 @@
   }
 
   .jumbotron {
+    padding: 0px;
     background-color: transparent;
   }
 
   .profile-pic {
     border-radius: 50%;
-    max-width: 150px;
-    margin-bottom: 20px;
+    max-width: 200px;
   }
 
   .media {
@@ -331,7 +364,6 @@
 
   .quote {
     color: rgba(255, 255, 255, 0.87);
-    width: 80%;
     .lead {
       font-style: italic;
       font-size: 40px;
@@ -355,18 +387,25 @@
 
   .about {
     .text {
+      text-align: left;
       margin: 0 auto;
       width: 80%;
     }
   }
 
   .line-item {
-    padding: 2.5rem !important;
+    text-align: left;
   }
 
   .contact-social-group {
     .social-icon {
       margin: 30px 15px;
     }
+  }
+
+  .small-italic {
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(0,0,0, 0.56);
   }
 </style>
