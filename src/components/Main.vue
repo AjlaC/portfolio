@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <div>
-      <b-navbar class="b-navbar" toggleable="md" type="light" variant="light">
-
-        <b-navbar-brand href="#" style="color: rgba(255,255,255,0.87)">AjlaC</b-navbar-brand>
-
+      <b-navbar class="b-navbar" :sticky="true" toggleable="md" type="light" variant="light">
+        <b-navbar-brand href="#" style="color: rgba(255,255,255,0.87)"><span class="special-font">Ajla Cano</span></b-navbar-brand>
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
         <b-collapse is-nav id="nav_collapse">
           <b-navbar-nav class="ml-auto">
@@ -18,50 +16,64 @@
     </div>
 
     <transition name="fadeLeftBig">
-      <div v-if="tab === 1" class="body-background">
-        <img src="https://github.com/AjlaC/portfolio/blob/master/ajlac2.png?raw=true" />
+      <div v-if="tab === 1" class="body-background clip1">
       </div>
     </transition>
 
-      <b-container v-if="tab === 1" class="container-fluid" fluid>
-        <div class="main row">
-          <div class="left col-md-6">
-            <b-jumbotron v-if="window.width >= 767" header="“" lead="Recognizing the need is the primary condition for design." class="quote">
-              <p class="bold-p">
-                - Charles Eames</p>
-            </b-jumbotron>
-          </div>
-          <div class="col-md-6">
-            <b-jumbotron class="landing-profile">
-              <div class="row">
-                <div class="">
-                  <p class="header">Ajla</p>
-                  <p class="lead"> Cano</p>
-                </div>
+    <transition name="fadeRightBig">
+      <div v-if="tab === 2" class="body-background clip2">
+      </div>
+    </transition>
+
+    <transition name="fadeLeftBig">
+      <div v-if="tab === 3" class="body-background clip3">
+      </div>
+    </transition>
+
+    <transition name="fadeRightBig">
+      <div v-if="tab === 4" class="body-background clip4">
+      </div>
+    </transition>
+
+    <b-container key="2" v-if="tab === 1" class="container-fluid" fluid>
+      <div class="main row">
+        <div class="left col-md-6">
+          <b-jumbotron v-if="window.width >= 767" header="“" lead="Recognizing the need is the primary condition for design." class="quote m-3 p-5">
+            <p class="bold-p">
+              - Charles Eames</p>
+          </b-jumbotron>
+        </div>
+        <div class="col-md-6">
+          <b-jumbotron class="landing-profile m-5" key="3" v-if="tab === 1">
+            <div class="row m-3">
+              <div class="m-4">
+                <span class="header">Ajla</span>
+                <span class="lead"> Cano</span>
               </div>
-              <p>I'm Ajla Cano, a Gothenburg based <span class="highlight-background">UX Engineer</span>. I'm design focused and process driven when it comes to powerful and elegant technology.
-              </p>
-              <div class="container">
-                <a class="gradient-button" @click="tab = 4">
-                  <span>Contact</span>
-                </a>
-              </div>
-            </b-jumbotron>
-            <div class="social-group">
-              <img @click="tab = 4" class="social-icon" src="https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg" />
-              <br>
-              <a href="https://instagram.com/ajlacreations">
-                <img class="social-icon" src="https://cdn.rawgit.com/emilundg/7d2df0d4f97fa81e52486093e2decc94/raw/f7e5664b835dc1038630760bed94959ba678da8d/instagram.svg" />
-                <br></a>
-              <a href="https://www.linkedin.com/in/ajla-cano/">
-                <img class="social-icon" src="https://cdn.rawgit.com/emilundg/cbbfd2b1fb856cb680eea5d19460e45e/raw/f98cb8c2aeaf448e13372d23b7643e363c8a59f4/Linkedin.svg" />
-                <br></a>
             </div>
+            <p>I'm Ajla Cano, a Gothenburg based <span class="highlight-background">UX Engineer</span>. I'm design focused and process driven when it comes to powerful and elegant technology.
+            </p>
+            <div class="container p-4">
+              <a class="gradient-button" @click="tab = 4">
+                <span>Contact</span>
+              </a>
+            </div>
+          </b-jumbotron>
+          <div class="social-group" v-if="window.width >= 767">
+            <img @click="tab = 4" class="social-icon" src="https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg" />
+            <br>
+            <a href="https://instagram.com/ajlacreations">
+              <img class="social-icon" src="https://cdn.rawgit.com/emilundg/7d2df0d4f97fa81e52486093e2decc94/raw/f7e5664b835dc1038630760bed94959ba678da8d/instagram.svg" />
+              <br></a>
+            <a href="https://www.linkedin.com/in/ajla-cano/">
+              <img class="social-icon" src="https://cdn.rawgit.com/emilundg/cbbfd2b1fb856cb680eea5d19460e45e/raw/f98cb8c2aeaf448e13372d23b7643e363c8a59f4/Linkedin.svg" />
+              <br></a>
           </div>
         </div>
-      </b-container>
+      </div>
+    </b-container>
 
-    <b-container v-if="tab === 2" class="container-fluid" fluid>
+    <b-container v-if="tab === 2" key="3" class="container-fluid" fluid>
       <h1>About me</h1>
       <div class="row">
         <div class="col-sm-6">
@@ -96,10 +108,10 @@
       </div>
     </b-container>
 
-    <b-container v-if="tab === 3" class="container-fluid" fluid>
+    <b-container v-if="tab === 3" class="container-flid" fluid>
       <h1>Portfolio</h1>
       <div class="row">
-        <swiper :options="swiperOption" class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <swiper v-if="window.width >= 769" :options="swiperOption" class="col-12 col-sm-12 col-md-12 col-lg-12">
           <div class="swiper-pagination" slot="pagination"></div>
           <swiper-slide>
             <b-card @click="show('easy-cube')" title="Easy Cube" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/easycube.png?raw=true" img-alt="Image" img-top tag="article">
@@ -131,32 +143,96 @@
               </p>
             </b-card>
           </swiper-slide>
-
         </swiper>
 
+        <div v-else class="col-sm-8">
+          <b-card @click="show('easy-cube')" title="Easy Cube" class="m-4" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/easycube.png?raw=true" img-alt="Image" img-top tag="article">
+            <p class="card-text">
+              Design
+            </p>
+          </b-card>
 
-        <modal :adaptive="true" name="easy-cube">
-          <button class="button button--modal_close p-3" @click="hide()">
-                        <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                      </button>
-        </modal>
+          <b-card title="Lit!" @click="show('lit')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/LITTT.png?raw=true" img-alt="Image" img-top tag="article">
+            <p class="card-text">
+              Design
+            </p>
+          </b-card>
+
+          <b-card title="RC Intro" @click="show('rc-intro')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/RC-intro.png?raw=true" img-alt="Image" img-top tag="article">
+            <p class="card-text">
+              Design
+            </p>
+          </b-card>
+
+          <b-card title="Status Table" @click="show('status-table')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" img-alt="Image" img-top tag="article">
+            <p class="card-text">
+              Design
+            </p>
+          </b-card>
+        </div>
+
+          <modal height="auto" width="90%" :scrollable="true" name="easy-cube" class="pt-5">
+            <div class="row modal-button p-4">
+              <button class="button button--modal_close" @click="hide()">
+                                                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                                                  </button>
+            </div>
+            <div class="row m-4">
+              <h2>Title</h2>
+            </div>
+            <div class="row m-3">
+              <div class="col-12 col-sm-5 col-md-5 col-lg-4 m-3">
+                <h4>SubTitel</h4>
+                Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or to admiration
+                remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.
+              </div>
+              <div class="col-12 col-sm-5 col-md-5 col-lg-4 m-3">
+                <h4>SubTitel</h4>
+                Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or to admiration
+                remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-8">
+                <b-img src="https://i.pinimg.com/originals/55/eb/cf/55ebcf986a972b54eb403802fe2b1bf4.jpg" thumbnail fluid/>
+              </div>
+            </div>
+
+            <div class="row m-4">
+              <div class="col-8">
+                <b-img src="https://i.pinimg.com/originals/55/eb/cf/55ebcf986a972b54eb403802fe2b1bf4.jpg" thumbnail fluid/>
+              </div>
+            </div>
+            <div class="row m-4">
+              <div class="col-8">
+                <b-img src="https://i.pinimg.com/originals/55/eb/cf/55ebcf986a972b54eb403802fe2b1bf4.jpg" thumbnail fluid/>
+              </div>
+            </div>
+            <div class="row m-4">
+              <div class="col-8">
+                <b-img src="https://i.pinimg.com/originals/55/eb/cf/55ebcf986a972b54eb403802fe2b1bf4.jpg" thumbnail fluid/>
+              </div>
+            </div>
+          </modal>
+
 
         <modal :adaptive="true" name="lit">
           <button class="button button--modal_close p-3" @click="hide()">
-                        <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                      </button>
+                                                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                                                  </button>
         </modal>
 
         <modal :adaptive="true" name="rc-intro">
           <button class="button button--modal_close p-3" @click="hide()">
-                        <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                      </button>
+                                                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                                                  </button>
         </modal>
 
         <modal :adaptive="true" name="status-table">
           <button class="button button--modal_close p-3" @click="hide()">
-                        <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                      </button>
+                                                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+                                                                                                  </button>
         </modal>
       </div>
     </b-container>
@@ -299,6 +375,11 @@
 </script>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
+  .modal-button {
+    justify-content: flex-end !important
+  }
+
   .button {
     &.button--modal_close {
       background: none;
@@ -319,6 +400,7 @@
   .card {
     border: none;
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    background: none;
     &:hover {
       opacity: 0.87;
     }
@@ -388,6 +470,7 @@
   }
 
   .quote {
+    width: 90%;
     color: rgba(255, 255, 255, 0.87);
     .lead {
       font-style: italic;
@@ -400,14 +483,13 @@
   }
 
   .landing-profile {
-    .lead {
-      float: left;
-      font-size: 72px;
-      font-weight: bold;
-    }
+    .lead,
     .header {
-      float: left;
       font-size: 72px;
+      font-family: 'Expletus Sans', cursive;
+    }
+    .lead {
+      font-weight: bold;
     }
   }
 
@@ -448,11 +530,48 @@
   }
 
   .body-background {
-    position: absolute;
-    z-index: 0;
-    img {
-      width: 100vw;
-      height: 100vh;
-    }
+    background-clip: content-box;
+    background: url('https://github.com/AjlaC/portfolio/blob/master/background_ajla_full.png?raw=true') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .clip1 {
+    -webkit-clip-path: polygon(0 0, 49% 0, 38% 100%, 0% 100%);
+    clip-path: polygon(0 0, 49% 0, 38% 100%, 0% 100%);
+  }
+
+  .clip2 {
+    background: linear-gradient(to right top, #c36ca1, #b882c0, #a997d8, #9aace7, #90beef);
+    -webkit-clip-path: polygon(100% 22%, 100% 0, 100% 100%, 90% 100%);
+    clip-path: polygon(100% 22%, 100% 0, 100% 100%, 90% 100%);
+  }
+
+  .clip3 {
+    background: linear-gradient(to right top, #c36ca1, #b882c0, #a997d8, #9aace7, #90beef);
+    -webkit-clip-path: polygon(0 0, 0 0, 19% 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 19% 100%, 0 100%);
+  }
+
+  .clip4 {
+    background: linear-gradient(to right top, #c36ca1, #b882c0, #a997d8, #9aace7, #90beef);
+    -webkit-clip-path: polygon(100% 0, 95% 80%, 100% 100%);
+    clip-path: polygon(100% 0, 95% 80%, 100% 100%);
+  }
+
+  .special-font {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Expletus Sans', cursive
   }
 </style>
