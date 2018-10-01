@@ -31754,15 +31754,12 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
 
 let router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
+  mode: 'history',
   routes: [{
+    path: '',
+    component: __WEBPACK_IMPORTED_MODULE_2__components_Main_vue__["a" /* default */]
+  }, {
     path: '*',
-    redirect: '/main'
-  }, {
-    path: '/',
-    redirect: '/main'
-  }, {
-    path: '/main',
-    name: 'Main',
     component: __WEBPACK_IMPORTED_MODULE_2__components_Main_vue__["a" /* default */]
   }]
 });
