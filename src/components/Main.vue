@@ -2,7 +2,7 @@
   <div id="app">
     <div>
       <b-navbar class="b-navbar" :sticky="true" toggleable="md" type="light" variant="light">
-        <b-navbar-brand href="#" style="color: rgba(255,255,255,0.87)"><span class="special-font">Ajla Cano</span></b-navbar-brand>
+        <b-navbar-brand href="#" style="color: rgba(255,255,255,0.87)"><span class="special-font">Ajla<b>Cano</b></span></b-navbar-brand>
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
         <b-collapse is-nav id="nav_collapse">
           <b-navbar-nav class="ml-auto">
@@ -48,7 +48,7 @@
             <div class="row m-3">
               <div class="m-4">
                 <span class="header">Ajla</span>
-                <span class="lead"> Cano</span>
+                <span class="lead">Cano</span>
               </div>
             </div>
             <p>I'm Ajla Cano, a Gothenburg based <span class="highlight-background">UX Engineer</span>. I'm design focused and process driven when it comes to powerful and elegant technology.
@@ -62,7 +62,7 @@
           <div class="social-group" v-if="window.width >= 767">
             <img @click="tab = 4" class="social-icon" src="https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg" />
             <br>
-            <a href="https://instagram.com/ajlacreations">
+            <a href="https://instagram.com/ajlascreations">
               <img class="social-icon" src="https://cdn.rawgit.com/emilundg/7d2df0d4f97fa81e52486093e2decc94/raw/f7e5664b835dc1038630760bed94959ba678da8d/instagram.svg" />
               <br></a>
             <a href="https://www.linkedin.com/in/ajla-cano/">
@@ -174,65 +174,97 @@
           <modal height="auto" width="90%" :scrollable="true" name="easy-cube" class="pt-5">
             <div class="row modal-button p-4">
               <button class="button button--modal_close" @click="hide()">
-                                                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                                                                                                  </button>
+               <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+              </button>
             </div>
+
             <div class="row m-4">
-              <h2>Title</h2>
+              <h2 class="special-font">Tork EasyCube</h2>
+            </div>
+
+            
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                <h4>The Problem</h4>
+                
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              </div>
+          </div>
+
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                <h4>The Audience</h4>
+
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              </div>
+          </div>
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                <h4>The Design Process</h4>
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              </div>
+          </div>
+
+            <div class="row m-3">
+           
+            <div class="col-12 col-sm-9"> 
+              <h4> The Design Interface </h4>
+              Below are the four different pages on the dashboard with different focus areas. Note that all the data visualized are fake data.
+                <b-img src="img/InNumbers.png" thumbnail fluid/>
+              </div>
             </div>
             <div class="row m-3">
-              <div class="col-12 col-sm-5 col-md-5 col-lg-4 m-3">
-                <h4>SubTitel</h4>
-                Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or to admiration
-                remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.
+              <div class="col-12 col-sm-9">
+                <b-img src="img/OurCustomers.png" thumbnail fluid/>
               </div>
-              <div class="col-12 col-sm-5 col-md-5 col-lg-4 m-3">
-                <h4>SubTitel</h4>
-                Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or to admiration
-                remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.
+            </div>
+            <div class="row m-3">
+              <div class="col-12 col-sm-9">
+                <b-img src="img/PeoplePattern.png" thumbnail fluid/>
+              </div>
+            </div>
+             <div class="row m-3">
+              <div class="col-12 col-sm-9">
+                <b-img src="img/SelfService.png" thumbnail fluid/>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-8">
-                <b-img src="https://i.pinimg.com/originals/55/eb/cf/55ebcf986a972b54eb403802fe2b1bf4.jpg" thumbnail fluid/>
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                <h4>The Outcome</h4>
+               The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. 
+               Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph...
               </div>
-            </div>
+          </div>
 
-            <div class="row m-4">
-              <div class="col-8">
-                <b-img src="https://i.pinimg.com/originals/55/eb/cf/55ebcf986a972b54eb403802fe2b1bf4.jpg" thumbnail fluid/>
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+               <h3 align="right"> / <span class="special-font">Ajla<b>Cano</b></span> </h3>
               </div>
-            </div>
-            <div class="row m-4">
-              <div class="col-8">
-                <b-img src="https://i.pinimg.com/originals/55/eb/cf/55ebcf986a972b54eb403802fe2b1bf4.jpg" thumbnail fluid/>
-              </div>
-            </div>
-            <div class="row m-4">
-              <div class="col-8">
-                <b-img src="https://i.pinimg.com/originals/55/eb/cf/55ebcf986a972b54eb403802fe2b1bf4.jpg" thumbnail fluid/>
-              </div>
-            </div>
+          </div>
+
+
           </modal>
 
 
         <modal :adaptive="true" name="lit">
           <button class="button button--modal_close p-3" @click="hide()">
-                                                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                                                                                                  </button>
+               <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+          </button>
         </modal>
 
         <modal :adaptive="true" name="rc-intro">
           <button class="button button--modal_close p-3" @click="hide()">
-                                                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                                                                                                  </button>
+             <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+           </button>
         </modal>
 
         <modal :adaptive="true" name="status-table">
           <button class="button button--modal_close p-3" @click="hide()">
-                                                                                                    <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-                                                                                                  </button>
+              <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+            </button>
         </modal>
       </div>
     </b-container>
@@ -244,7 +276,7 @@
           <b-media>
             <div class="contact-social-group m-4">
               <img @click="tab = 4" class="social-icon-large" src="https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg" />
-              <a href="https://instagram.com/ajlacreations">
+              <a href="https://instagram.com/ajlascreations">
                 <img class="social-icon-large" src="https://cdn.rawgit.com/emilundg/7d2df0d4f97fa81e52486093e2decc94/raw/f7e5664b835dc1038630760bed94959ba678da8d/instagram.svg" />
               </a>
               <a href="https://www.linkedin.com/in/ajla-cano/">
