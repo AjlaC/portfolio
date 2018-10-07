@@ -40,10 +40,6 @@ app.use('/api', apiRouter)
 
 // create middleware to handle the serving the app
 app.use("/", serveStatic(path.join(__dirname, '/dist')))
-// Catch all routes and redirect to the index file
-app.get('*', function (req, res) {
-    res.sendFile(__dirname + '/index.html')
-})
 
 app.get('/.well-known/acme-challenge/--GsIMp4pEh12SJiOvB3eek3Z0ro4MxEt5wZ8i3fjVw', function(req, res) {
     res.send('--GsIMp4pEh12SJiOvB3eek3Z0ro4MxEt5wZ8i3fjVw.qmn5ogFW6AYmmbnfD9Mmd5HC58II9i9--DIgM2srvmw')
