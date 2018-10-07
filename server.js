@@ -3,11 +3,13 @@ const serveStatic = require('serve-static')
 const path = require('path')
 // create the express app
 const app = express()
+var sslRedirect = require('heroku-ssl-redirect');
 
 var apiRouter = express.Router()
 
 // Serve static assets
 app.use("/static", serveStatic(path.join(__dirname, '/static')));
+app.use(sslRedirect());
 
 apiRouter.get('/postmaster/:name/:email/:message', (req, res, next) => {
     var apiKey = 'key-d3b5ee1965da4ee91df34f25693c9d31'
@@ -42,6 +44,11 @@ app.use("/", serveStatic(path.join(__dirname, '/dist')))
 app.get('*', function (req, res) {
     res.sendFile(__dirname + '/index.html')
 })
+
+app.get('/.well-known/acme-challenge/--GsIMp4pEh12SJiOvB3eek3Z0ro4MxEt5wZ8i3fjVw', function(req, res) {
+    res.send('--GsIMp4pEh12SJiOvB3eek3Z0ro4MxEt5wZ8i3fjVw.qmn5ogFW6AYmmbnfD9Mmd5HC58II9i9--DIgM2srvmw')
+})
+
 // Create default port to serve the app on
 const port = process.env.PORT || 5000
 app.listen(port)
