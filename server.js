@@ -6,6 +6,9 @@ const app = express()
 
 var apiRouter = express.Router()
 
+// Serve static assets
+app.use("/static", serveStatic(path.join(__dirname, '/static')));
+
 apiRouter.get('/postmaster/:name/:email/:message', (req, res, next) => {
     var apiKey = 'key-d3b5ee1965da4ee91df34f25693c9d31'
     var domain = 'sandbox2f72beb589cd46e78ebff2f5ea6ad23b.mailgun.org'

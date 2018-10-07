@@ -182,11 +182,11 @@
               <h2 class="special-font">Tork EasyCube</h2>
             </div>
 
-            
+
           <div class="row m-3">
                <div class="col-12 col-sm-9">
                 <h4>The Problem</h4>
-                
+
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
               </div>
           </div>
@@ -208,21 +208,21 @@
           </div>
 
             <div class="row m-3">
-           
-            <div class="col-12 col-sm-9"> 
+
+            <div class="col-12 col-sm-9">
               <h4> The Design Interface </h4>
               Below are the four different pages on the dashboard with different focus areas. Note that all the data visualized are fake data.
-                <b-img src="img/InNumbers.png" thumbnail fluid/>
+                <b-img src="/static/images/InNumbers.png" thumbnail fluid/>
               </div>
             </div>
             <div class="row m-3">
               <div class="col-12 col-sm-9">
-                <b-img src="img/OurCustomers.png" thumbnail fluid/>
+                <b-img src="/static/images/OurCustomers.png" thumbnail fluid/>
               </div>
             </div>
             <div class="row m-3">
               <div class="col-12 col-sm-9">
-                <b-img src="img/PeoplePattern.png" thumbnail fluid/>
+                <b-img src="/static/images/PeoplePattern.png" thumbnail fluid/>
               </div>
             </div>
              <div class="row m-3">
@@ -234,7 +234,7 @@
           <div class="row m-3">
                <div class="col-12 col-sm-9">
                 <h4>The Outcome</h4>
-               The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. 
+               The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
                Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph...
               </div>
           </div>
