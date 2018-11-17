@@ -102,8 +102,9 @@
           <div class="container">
             <a class="gradient-button" href="https://github.com/AjlaC/ajlac.github.io/raw/master/pdf/ajlacanoCV.pdf" download>
               <span>Download</span>
+             
             </a>
-          </div>
+          </div> <br><br>
         </div>
       </div>
     </b-container>
@@ -114,9 +115,10 @@
         <swiper v-if="window.width >= 769" :options="swiperOption" class="col-12 col-sm-12 col-md-12 col-lg-12">
           <div class="swiper-pagination" slot="pagination"></div>
           <swiper-slide>
-            <b-card @click="show('easy-cube')" title="Easy Cube" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/easycube.png?raw=true" img-alt="Image" img-top tag="article">
+            <b-card @click="show('easy-cube')" title="Tork Easy Cube" class="m-3" img-src="static/images/easycube-cover.png" img-alt="Image" img-top tag="article">
               <p class="card-text">
-                Design
+                UX/UI Design and Front-end Dev.<br>
+                Information visualization
               </p>
             </b-card>
           </swiper-slide>
@@ -139,16 +141,18 @@
           <swiper-slide>
             <b-card title="Status Table" @click="show('status-table')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" img-alt="Image" img-top tag="article">
               <p class="card-text">
-                Design
+                UX/TUI Design <br>
+              Concept design
               </p>
             </b-card>
           </swiper-slide>
         </swiper>
 
         <div v-else class="col-sm-8">
-          <b-card @click="show('easy-cube')" title="Easy Cube" class="m-4" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/easycube.png?raw=true" img-alt="Image" img-top tag="article">
+          <b-card @click="show('easy-cube')" title="Tork Easy Cube" class="m-4" img-src="static/images/easycube-cover.png" img-alt="Image" img-top tag="article">
             <p class="card-text">
-              Design
+            UX/UI Design and Front-end Dev. <br>
+            Information visualization
             </p>
           </b-card>
 
@@ -166,10 +170,15 @@
 
           <b-card title="Status Table" @click="show('status-table')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" img-alt="Image" img-top tag="article">
             <p class="card-text">
-              Design
+              UX/TUI Design <br>
+              Concept design
             </p>
           </b-card>
         </div>
+
+
+
+
 
           <modal height="auto" width="90%" :scrollable="true" name="easy-cube" class="pt-5">
             <div class="row modal-button p-4">
@@ -185,9 +194,15 @@
 
           <div class="row m-3">
                <div class="col-12 col-sm-9">
-                <h4>The Problem</h4>
+                  <b-img src="/static/images/easycube-header.png" thumbnail fluid/>
+               <p>During a summer 2018 in a project at Essity AB, I designed the interface and user experience of Tork EasyCube's internal dashboard and developed the front-end in Angular 6. 
+               I worked independenly as the UX Designer and Developer. The focus of this project was to re-design the dashboard that displayed relevant data and connect it in a way that is meaningful to the company.
+               </p>
 
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              <h4>The Problem</h4>
+               The starting point of this project was the existing dashboard at the company. It consisted of only one screen with a few graphs and charts showcasing numbers related to the products and customers. 
+               The old dashboard got a fair amount of critique from the employees since it didn't appeal to them in any way, especially after a longer while. The biggest challenge was to try and meet all the employees' needs
+               and desires while keeping the information short enough to still be interesting. 
               </div>
           </div>
 
@@ -195,15 +210,27 @@
           <div class="row m-3">
                <div class="col-12 col-sm-9">
                 <h4>The Audience</h4>
-
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                Since the intention of such a dashboard is to be visible and displayed on a few larger TV info-screens for an entire floor at the company, 
+                the user group included a mixture of employees with different backgrounds such as developers, marketing teams, project managers, researchers, etc.
+             
               </div>
           </div>
 
           <div class="row m-3">
                <div class="col-12 col-sm-9">
                 <h4>The Design Process</h4>
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                The process was performed in several stages such as research phase, ideation phase, prototyping phase, evaluation phase, and implementation phase.
+                <br>The <b>research phase</b> was initiated with interview results from a previous similiar study from the year before, that I reviewed and collected the most 
+                common answers in order to structure them and establish the first requirements. I also performed interviews that included questions regarding the current dashboard
+                but also general questions about their needs and areas of interest. The results from those interviews were added to the requirements list. 
+                <br> During the <b> ideation phase</b> I held two brainstorming workshops with other summer worker collegues, one having the focus of generating new use cases and types of information that could be potentially 
+                interesting, and the other one focusing on the established requiremets. 
+                <br> From those results I could continue with the <b>prototyping phase</b> and create two different prototypes: paper wireframes, and hi-fi look-and-feel mockup that followed the company's brand guidelines.
+                <br> A quick <b> evaluation </b> of the proposed mock-up was performed together with the stakeholders and after a few changes I <b>implemented</b> the structure of the dashboard, as well as a few graphs and all the placeholders.
+       
+              <br><br>
+                The core idea for the new internal dashboard is that it would consist of two versions, one which has a slide-show like structure suitable for the info TV-screen, and one desktop version with a sidebar navigation.
+                <b-img src="/static/images/rotatingscreen.png" thumbnail fluid/>
               </div>
           </div>
 
@@ -211,31 +238,53 @@
 
             <div class="col-12 col-sm-9">
               <h4> The Design Interface </h4>
-              Below are the four different pages on the dashboard with different focus areas. Note that all the data visualized are fake data.
+              Below are the four different pages (mock-up version) on the dashboard with different focus areas. Note that all data visualized is fake data.
+               <h5>First Page: In Number</h5> 
                 <b-img src="/static/images/InNumbers.png" thumbnail fluid/>
               </div>
             </div>
             <div class="row m-3">
               <div class="col-12 col-sm-9">
+                <h5>Second Page: Our Customers</h5>
                 <b-img src="/static/images/OurCustomers.png" thumbnail fluid/>
               </div>
             </div>
             <div class="row m-3">
               <div class="col-12 col-sm-9">
+                <h5>Third Page: People Pattern</h5>
                 <b-img src="/static/images/PeoplePattern.png" thumbnail fluid/>
               </div>
             </div>
              <div class="row m-3">
               <div class="col-12 col-sm-9">
-                <b-img src="img/SelfService.png" thumbnail fluid/>
+                <h5>Fourth Page: Self-Service</h5>
+                <b-img src="/static/images/SelfService.png" thumbnail fluid/>
               </div>
             </div>
 
           <div class="row m-3">
                <div class="col-12 col-sm-9">
-                <h4>The Outcome</h4>
-               The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
-               Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph...
+              <h4>The Outcome</h4>
+               <div>In contrast to the old dashboard, the new one is more dynamic and consists of several different pages, targeting different user groups. 
+                 It also has two different version, one slideshow version and one desktop version that includes the Self-service page.
+               </div>
+               
+               <b>Info-boxes</b><br>
+               Even though the dashboard itself was different from traditional one-page dashboards in a way 
+               that it consisted of different pages that covered various topics, I tried to keep a common thread on each page. 
+               The common thread are the different motivational info-boxes on each page, indicating that the information 
+               visualized is meaningful to the company and that there might be new use cases and take aways they can gain from 
+               the information. 
+               <b-img src="/static/images/inspirationboxes.png" thumbnail fluid/>
+               <br><br>
+               <b>Scalability</b><br>
+               The dashboard was purposely designed with a sidebar navigation which makes it possible to add more pages depending on requests and demands from the users. Below is an example that was a suggested use case by the company during the last week of summer work.
+               <b-img src="/static/images/BusinessTalk2.png" thumbnail fluid/>
+               <br><br>
+               The end result of this summer's project was an implemented general structure of the dashboard 
+               with all the placeholders and description texts needed. A few graphs where implemented 
+               with D3.js but most of the data was not visualized yet. The project was handed off to 
+               the fulltime developer team at the company. 
               </div>
           </div>
 
