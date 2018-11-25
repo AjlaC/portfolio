@@ -470,7 +470,7 @@
             </button>
 
           <div class="row m-4">
-              <h2 class="special-font">Status Table</h2>
+              <h2 class="special-font">Remote Classroom</h2>
             </div>
 
 
