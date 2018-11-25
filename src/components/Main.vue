@@ -114,72 +114,178 @@
       <div class="row">
         <swiper v-if="window.width >= 769" :options="swiperOption" class="col-12 col-sm-12 col-md-12 col-lg-12">
           <div class="swiper-pagination" slot="pagination"></div>
-          <swiper-slide>
-            <b-card @click="show('easy-cube')" title="Tork Easy Cube" class="m-3" img-src="static/images/easycube-cover.png" img-alt="Image" img-top tag="article">
+          <!-- ********FIRST cover***********-->
+           <swiper-slide>
+            <b-card @click="show('share-it')" title="Share It" class="m-3" img-src="static/images/shareit-cover.png" img-alt="Image" img-top tag="article">
+              <p class="card-text">
+                UX/UI Design<br>
+                Mobile application design
+              </p>
+            </b-card>
+          </swiper-slide>
+         
+
+          <!-- ********SECOND cover***********-->
+           <swiper-slide>
+            <b-card title="Muffin or Chihuahua?" @click="show('muffin')" class="m-3" img-src="static/images/muffin-cover.png" img-alt="Image" img-top tag="article">
+              <p class="card-text">
+                UX/TUI Design<br>
+                Interactive Game Exhibition
+              </p>
+            </b-card>
+          </swiper-slide>
+          
+
+          <!-- ********THIRD cover***********-->
+         <swiper-slide>
+            <b-card @click="show('easy-cube')" title="Tork EasyCube" class="m-3" img-src="static/images/easycube-cover.png" img-alt="Image" img-top tag="article">
               <p class="card-text">
                 UX/UI Design and Front-end Dev.<br>
                 Information visualization
               </p>
             </b-card>
           </swiper-slide>
+
+
+        <!-- ********FOURTH cover***********-->
           <swiper-slide>
-            <b-card title="Lit!" @click="show('lit')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/LITTT.png?raw=true" img-alt="Image" img-top tag="article">
+            <b-card title="CyberSketch." @click="show('cyber-sketch')" class="m-3" img-src="static/images/cybersketch-cover.png" img-alt="Image" img-top tag="article">
               <p class="card-text">
-                Design
+                MR Concept and Development <br>
+                Rich input 3D sketching tool
               </p>
             </b-card>
           </swiper-slide>
 
+         <!-- ********FIFTH cover***********--> 
           <swiper-slide>
-            <b-card title="RC Intro" @click="show('rc-intro')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/RC-intro.png?raw=true" img-alt="Image" img-top tag="article">
+            <b-card title="Status Table" @click="show('status-table')" class="m-3" img-src="static/images/statustable-cover.png" img-alt="Image" img-top tag="article">
               <p class="card-text">
-                Design
+              UX/TUI Design <br>
+              Tangible Office Planner
               </p>
             </b-card>
           </swiper-slide>
 
+          <!-- ********SIXTH cover***********--> 
           <swiper-slide>
-            <b-card title="Status Table" @click="show('status-table')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" img-alt="Image" img-top tag="article">
+            <b-card title="Remote Classroom" @click="show('remote-classroom')" class="m-3" img-src="static/images/rc-cover.png" img-alt="Image" img-top tag="article">
               <p class="card-text">
-                UX/TUI Design <br>
-              Concept design
+              UX/UI Design and Front-end dev. <br>
+              Mobile Learning Platform
               </p>
             </b-card>
           </swiper-slide>
         </swiper>
 
+        <!-- ********FIRST cover mobile***********-->
         <div v-else class="col-sm-8">
-          <b-card @click="show('easy-cube')" title="Tork Easy Cube" class="m-4" img-src="static/images/easycube-cover.png" img-alt="Image" img-top tag="article">
+          <b-card @click="show('share-it')" title="Share It" class="m-3" img-src="static/images/shareit-cover.png" img-alt="Image" img-top tag="article">
+              <p class="card-text">
+                UX/UI Design<br>
+                Mobile application design
+              </p>
+            </b-card>
+
+        <!-- ********SECOND cover mobile***********-->
+         <b-card title="Muffin or Chihuahua?" @click="show('muffin')" class="m-3" img-src="static/images/muffin-cover.png" img-alt="Image" img-top tag="article">
+            <p class="card-text">
+              UX/TUI Design<br>
+              Interactive Game Exhibition
+            </p>
+          </b-card>
+          
+
+        <!-- ********THIRD cover mobile***********-->
+        <b-card @click="show('easy-cube')" title="Tork EasyCube" class="m-4" img-src="static/images/easycube-cover.png" img-alt="Image" img-top tag="article">
             <p class="card-text">
             UX/UI Design and Front-end Dev. <br>
             Information visualization
             </p>
           </b-card>
 
-          <b-card title="Lit!" @click="show('lit')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/LITTT.png?raw=true" img-alt="Image" img-top tag="article">
-            <p class="card-text">
-              Design
-            </p>
-          </b-card>
+        <!-- ********FOURTH cover mobile***********-->
+          <b-card title="CyberSketch." @click="show('cyber-sketch')" class="m-3" img-src="static/images/cybersketch-cover.png" img-alt="Image" img-top tag="article">
+              <p class="card-text">
+                MR Concept and Development <br>
+                Rich input 3D sketching tool
+              </p>
+            </b-card>
 
-          <b-card title="RC Intro" @click="show('rc-intro')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/RC-intro.png?raw=true" img-alt="Image" img-top tag="article">
-            <p class="card-text">
-              Design
-            </p>
-          </b-card>
-
+        <!-- ********FIFTH cover mobile***********-->
           <b-card title="Status Table" @click="show('status-table')" class="m-3" img-src="https://github.com/AjlaC/ajlac.github.io/blob/master/images/statustable.PNG?raw=true" img-alt="Image" img-top tag="article">
             <p class="card-text">
               UX/TUI Design <br>
-              Concept design
+              Tangible Office Planner 
             </p>
           </b-card>
+        
+
+         <!-- ********SIXTH cover mobile***********-->
+          <b-card title="Remote Classroom" @click="show('remote-classroom')" class="m-3" img-src="static/images/rc-cover.png" img-alt="Image" img-top tag="article">
+              <p class="card-text">
+              UX/UI Design and Front-end dev. <br>
+              Mobile Learning Platform
+              </p>
+            </b-card>
         </div>
 
 
+        <!-- ********FIRST MODAL***********-->
+        <modal height="auto" width="90%" :scrollable="true" name="share-it">
+          <button class="button button--modal_close p-3" @click="hide()">
+               <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+          </button>
+
+           <div class="row m-4">
+              <h2 class="special-font">Share It</h2>
+            </div>
 
 
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                  <b-img src="/static/images/shareit-header.png" thumbnail fluid/>
+               <p>DESCRIPTION COMING SHORTLY!</p>
+               </div>
+          </div>
 
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+               <h3 align="right"> / <span class="special-font">Ajla<b>Cano</b></span> </h3>
+              </div>
+          </div>
+
+        </modal>
+ 
+        <!-- ********SECOND MODAL***********-->
+        <modal height="auto" width="90%" :scrollable="true" name="muffin">
+          <button class="button button--modal_close p-3" @click="hide()">
+               <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+          </button>
+
+           <div class="row m-4">
+              <h2 class="special-font">Muffin or Chihuahua?</h2>
+            </div>
+
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                  <b-img src="/static/images/muffin-header.png" thumbnail fluid/>
+               <p>DESCRIPTION COMING SHORTLY!</p>
+               </div>
+          </div>
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+               <h3 align="right"> / <span class="special-font">Ajla<b>Cano</b></span> </h3>
+              </div>
+          </div>
+
+
+        </modal>
+
+
+         <!-- ********THIRD MODAL***********--> 
           <modal height="auto" width="90%" :scrollable="true" name="easy-cube" class="pt-5">
             <div class="row modal-button p-4">
               <button class="button button--modal_close" @click="hide()">
@@ -195,7 +301,7 @@
           <div class="row m-3">
                <div class="col-12 col-sm-9">
                   <b-img src="/static/images/easycube-header.png" thumbnail fluid/>
-               <p>During a summer 2018 in a project at Essity AB, I designed the interface and user experience of Tork EasyCube's internal dashboard and developed the front-end in Angular 6. 
+               <p>During summer of 2018 in a project at Essity AB, I designed the interface and user experience of Tork EasyCube's internal dashboard and developed the front-end in Angular 6. 
                I worked independenly as the UX Designer and Developer. The focus of this project was to re-design the dashboard that displayed relevant data and connect it in a way that is meaningful to the company.
                </p>
 
@@ -298,25 +404,96 @@
           </modal>
 
 
-        <modal :adaptive="true" name="lit">
-          <button class="button button--modal_close p-3" @click="hide()">
-               <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
-          </button>
-        </modal>
 
-        <modal :adaptive="true" name="rc-intro">
+
+
+        <!-- ********FOURTH MODAL***********-->
+        <modal height="auto" width="90%" :scrollable="true"  name="cyber-sketch">
           <button class="button button--modal_close p-3" @click="hide()">
              <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
            </button>
+
+           <div class="row m-4">
+              <h2 class="special-font">CyberSketch.</h2>
+            </div>
+
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                  <b-img src="/static/images/cybersketch-header.png" thumbnail fluid/>
+               <p>DESCRIPTION COMING SHORTLY!</p>
+
+
+
+               <iframe src="https://player.vimeo.com/video/272779701" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+               </div>
+          </div>
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+               <h3 align="right"> / <span class="special-font">Ajla<b>Cano</b></span> </h3>
+              </div>
+          </div>
         </modal>
 
-        <modal :adaptive="true" name="status-table">
+        <!-- ********FIFTH MODAL***********-->
+        <modal height="auto" width="90%" :scrollable="true"  name="status-table">
           <button class="button button--modal_close p-3" @click="hide()">
               <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
             </button>
+
+          <div class="row m-4">
+              <h2 class="special-font">Status Table</h2>
+            </div>
+
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                  <b-img src="/static/images/statustable-header.png" thumbnail fluid/>
+               <p>DESCRIPTION COMING SHORTLY!</p>
+
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/trOtyn_VjWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+          </div>
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+               <h3 align="right"> / <span class="special-font">Ajla<b>Cano</b></span> </h3>
+              </div>
+          </div>
+        </modal>
+
+        <!-- ********SIXTH MODAL***********-->
+        <modal height="auto" width="90%" :scrollable="true"  name="remote-classroom">
+          <button class="button button--modal_close p-3" @click="hide()">
+              <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
+            </button>
+
+          <div class="row m-4">
+              <h2 class="special-font">Status Table</h2>
+            </div>
+
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+                  <b-img src="/static/images/rc-header.png" thumbnail fluid/>
+               <p>DESCRIPTION COMING SHORTLY!</p>
+              
+              </div>
+          </div>
+
+          <div class="row m-3">
+               <div class="col-12 col-sm-9">
+               <h3 align="right"> / <span class="special-font">Ajla<b>Cano</b></span> </h3>
+              </div>
+          </div>
         </modal>
       </div>
     </b-container>
+
+
+
+
 
     <b-container v-if="tab === 4" class="container-fluid " fluid>
       <h1>Contact</h1>
