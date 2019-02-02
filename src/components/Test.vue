@@ -93,7 +93,7 @@
         this.tab = num;
       },
       async sendEmail() {
-        var response = await api.sendEmail(this.form.email, this.form.topic, 'Here you go madafaka, new interest!' + this.form.text)
+        var response = await api.sendEmail(this.form.email, this.form.topic, 'Hello, someone showed interest! ' + this.form.text)
         if (response.status === 200) {
           window
             .location

@@ -77,7 +77,8 @@
       <h1>About me</h1>
       <div class="row">
         <div class="col-sm-6">
-          <img class="profile-pic img-thumbnail" src="https://media.licdn.com/dms/image/C5603AQFcYINCf49DyA/profile-displayphoto-shrink_800_800/0?e=1543449600&v=beta&t=E4Bupq8ix0SeJzni8a4PZl8oL4SeIoxQL_zhc9kP5yY" />
+          <b-img class="profile-pic img-thumbnail" src="static/images/photoofme.png"></b-img>
+         
         </div>
       </div>
       <div class="row">
@@ -97,11 +98,11 @@
             <light-timeline :items='items'></light-timeline>
           </b-jumbotron>
           <p class="small-italic">
-            For more detailed information download CV:
+            For more detailed information:
           </p>
           <div class="container">
-            <a class="gradient-button" href="https://github.com/AjlaC/ajlac.github.io/raw/master/pdf/ajlacanoCV.pdf" download>
-              <span>Download</span>
+            <a class="gradient-button" target="_blank" href="static/pdf/Ajla-CV-v19.pdf">
+              <span>Open Resume</span>
              
             </a>
           </div> <br><br>
@@ -258,10 +259,12 @@
         </modal>
  
         <!-- ********SECOND MODAL***********-->
-        <modal height="auto" width="90%" :scrollable="true" name="muffin">
+        <modal height="auto" width="90%" :scrollable="true" name="muffin" class="pt-5">
+          <div class="row modal-button p-4">
           <button class="button button--modal_close p-3" @click="hide()">
                <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
           </button>
+          </div>
 
            <div class="row m-4">
               <h2 class="special-font">Muffin or Chihuahua?</h2>
@@ -408,10 +411,12 @@
 
 
         <!-- ********FOURTH MODAL***********-->
-        <modal height="auto" width="90%" :scrollable="true"  name="cyber-sketch">
+        <modal height="auto" width="90%" :scrollable="true"  name="cyber-sketch" class="pt-5">
+          <div class="row modal-button p-4">
           <button class="button button--modal_close p-3" @click="hide()">
              <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
            </button>
+          </div>
 
            <div class="row m-4">
               <h2 class="special-font">CyberSketch.</h2>
@@ -437,10 +442,12 @@
         </modal>
 
         <!-- ********FIFTH MODAL***********-->
-        <modal height="auto" width="90%" :scrollable="true"  name="status-table">
+        <modal height="auto" width="90%" :scrollable="true"  name="status-table" class="pt-5">
+          <div class="row modal-button p-4">
           <button class="button button--modal_close p-3" @click="hide()">
               <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
             </button>
+          </div>
 
           <div class="row m-4">
               <h2 class="special-font">Status Table</h2>
@@ -464,10 +471,12 @@
         </modal>
 
         <!-- ********SIXTH MODAL***********-->
-        <modal height="auto" width="90%" :scrollable="true"  name="remote-classroom">
+        <modal height="auto" width="90%" :scrollable="true"  name="remote-classroom" class="pt-5">
+          <div class="row modal-button p-4">
           <button class="button button--modal_close p-3" @click="hide()">
               <img src="https://image.flaticon.com/icons/svg/127/127936.svg"/>
             </button>
+          </div>
 
           <div class="row m-4">
               <h2 class="special-font">Remote Classroom</h2>
@@ -621,7 +630,7 @@
         this.tab = num;
       },
       async sendEmail() {
-        var response = await api.sendEmail(this.form.email, this.form.topic, 'Here you go madafaka, new interest!' + this.form.text)
+        var response = await api.sendEmail(this.form.email, this.form.topic, 'Hello, someone showed interest! ' + this.form.text)
         if (response.status === 200) {
           window
             .location
