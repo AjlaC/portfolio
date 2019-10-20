@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <div class="row m-4">
       <h2 class="special-font">Share It</h2>
     </div>
@@ -161,8 +161,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
-
 @media (orientation: landscape) {
   width: 75vw;
   margin: 0 auto;
@@ -220,10 +218,5 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.special-font {
-  color: rgba(0, 0, 0, 0.87);
-  font-family: 'Expletus Sans', cursive;
 }
 </style>

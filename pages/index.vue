@@ -4,7 +4,7 @@
     <transition name="fadeLeftBig">
       <div class="body-background clip1"></div>
     </transition>
-    <b-container key="2" class="container-fluid" fluid>
+    <b-container key="2" class="container-fluid">
       <div class="main row">
         <div class="left col-md-6">
           <b-jumbotron
@@ -19,7 +19,7 @@
           </b-jumbotron>
         </div>
         <div class="col-md-6">
-          <b-jumbotron class="landing-profile m-5" key="3" v-if="tab === 1">
+          <b-jumbotron class="landing-profile m-5" key="3">
             <div class="row m-3">
               <div class="m-4">
                 <span class="header">Ajla</span>
@@ -33,7 +33,7 @@
               technology.
             </p>
             <div class="container p-4">
-              <a class="gradient-button" @click="tab = 4">
+              <a class="gradient-button">
                 <span>Contact</span>
               </a>
             </div>
@@ -69,47 +69,15 @@
 
 <script>
 import navbar from '~/components/navbar.vue'
-require('vue2-animate/dist/vue2-animate.min.css')
 
 export default {
-  name: 'app',
+  name: 'index',
   components: { navbar },
   data() {
     return {
       window: {
         width: 0,
         height: 0
-      },
-      tab: 1,
-      currentModal: '',
-      items: [
-        {
-          tag: '2017-2019',
-          content: 'M.SC. Interaction Design and Technologies at Chalmers'
-        },
-        {
-          tag: '2014-2017',
-          color: '#dcdcdc',
-          type: 'circle',
-          content: 'B.Sc. Computer Science and Engineering at Chalmers'
-        },
-        {
-          tag: '2013-2014',
-          color: '#dcdcdc',
-          type: 'circle',
-          content: 'Engineering Foundation Year at Chalmers'
-        },
-        {
-          tag: '2010-2013',
-          color: '#dcdcdc',
-          type: 'circle',
-          content: 'Arts Programme in High School'
-        }
-      ],
-      form: {
-        email: '',
-        topic: '',
-        text: ''
       }
     }
   },
@@ -127,23 +95,12 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth
       this.window.height = window.innerHeight
-    },
-    show(name) {
-      this.currentModal = name
-      this.$modal.show(name)
-    },
-    hide() {
-      this.$modal.hide(this.currentModal)
-    },
-    changeTab(num) {
-      this.tab = num
     }
   }
 }
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
 .modal-button {
   justify-content: flex-end !important;
 }
@@ -176,16 +133,6 @@ export default {
 
 .navbar {
   background-color: transparent !important;
-}
-
-.jumbotron {
-  padding: 0px;
-  background-color: transparent;
-}
-
-.profile-pic {
-  border-radius: 50%;
-  max-width: 200px;
 }
 
 .media {
@@ -254,18 +201,10 @@ export default {
   .lead,
   .header {
     font-size: 72px;
-    font-family: 'Expletus Sans', cursive;
+    font-family: 'Expletus Sans', sans-serif;
   }
   .lead {
     font-weight: bold;
-  }
-}
-
-.about {
-  .text {
-    text-align: left;
-    margin: 0 auto;
-    width: 80%;
   }
 }
 
@@ -329,54 +268,5 @@ export default {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.clip1 {
-  -webkit-clip-path: polygon(0 0, 49% 0, 38% 100%, 0% 100%);
-  clip-path: polygon(0 0, 49% 0, 38% 100%, 0% 100%);
-}
-
-.clip2 {
-  background: linear-gradient(
-    to right top,
-    #c36ca1,
-    #b882c0,
-    #a997d8,
-    #9aace7,
-    #90beef
-  );
-  -webkit-clip-path: polygon(100% 22%, 100% 0, 100% 100%, 90% 100%);
-  clip-path: polygon(100% 22%, 100% 0, 100% 100%, 90% 100%);
-}
-
-.clip3 {
-  background: linear-gradient(
-    to right top,
-    #c36ca1,
-    #b882c0,
-    #a997d8,
-    #9aace7,
-    #90beef
-  );
-  -webkit-clip-path: polygon(0 0, 0 0, 19% 100%, 0 100%);
-  clip-path: polygon(0 0, 0 0, 19% 100%, 0 100%);
-}
-
-.clip4 {
-  background: linear-gradient(
-    to right top,
-    #c36ca1,
-    #b882c0,
-    #a997d8,
-    #9aace7,
-    #90beef
-  );
-  -webkit-clip-path: polygon(100% 0, 95% 80%, 100% 100%);
-  clip-path: polygon(100% 0, 95% 80%, 100% 100%);
-}
-
-.special-font {
-  color: rgba(0, 0, 0, 0.87);
-  font-family: 'Expletus Sans', cursive;
 }
 </style>

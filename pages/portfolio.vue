@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <div>
     <navbar />
-    <nuxt-child />
+    <nuxt-child class="project" />
     <b-container class="portfolio-container">
       <b-row class="m-4">
         <b-col>
-          <h2 align="left">App/Web</h2>
+          <h2 class="special-font" align="left">App/Web</h2>
         </b-col>
       </b-row>
       <b-row class="m-4">
@@ -46,7 +46,7 @@
 
       <b-row class="m-4">
         <b-col>
-          <h2 align="left">AR/VR</h2>
+          <h2 class="special-font" align="left">AR/VR</h2>
         </b-col>
       </b-row>
       <b-row class="m-4">
@@ -65,7 +65,7 @@
 
       <b-row class="m-4">
         <b-col>
-          <h2 align="left">Physical Installations</h2>
+          <h2 class="special-font" align="left">Physical Installations</h2>
         </b-col>
       </b-row>
       <b-row class="m-4">
@@ -133,11 +133,12 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
-
 @media (orientation: landscape) {
   width: 75vw;
   margin: 0 auto;
+}
+
+@media (orientation: portrait) {
 }
 
 #back-button {
@@ -175,11 +176,6 @@ export default {
   float: left;
 }
 
-.special-font {
-  color: rgba(0, 0, 0, 0.87);
-  font-family: 'Expletus Sans', cursive;
-}
-
 .portfolio-container {
   @media (orientation: landscape) {
     width: 75vw;
@@ -191,5 +187,11 @@ export default {
 
 .card {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project {
+  text-align: left;
+  margin: 0 auto;
+  width: 80%;
 }
 </style>

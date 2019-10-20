@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <div>
       <b-navbar
         class="b-navbar"
@@ -8,7 +8,7 @@
         type="light"
         variant="light"
       >
-        <b-navbar-brand href="#" style="color: rgba(255,255,255,0.87)"
+        <b-navbar-brand to="/" style="color: rgba(255,255,255,0.87)"
           ><span class="special-font">Ajla<b>Cano</b></span></b-navbar-brand
         >
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>

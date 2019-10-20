@@ -14,7 +14,13 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Lato|Expletus Sans'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +29,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/main.css', '@/assets/css/main.scss'],
   /*
    ** Plugins to load before mounting the App
    */

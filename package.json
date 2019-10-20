@@ -20,7 +20,6 @@
     "bootstrap": "^4.1.3",
     "@nuxtjs/axios": "^5.3.6",
     "heroku-ssl-redirect": "0.0.4",
-    "vue2-animate": "^2.1.0",
     "vue-light-timeline": "^1.0.1"
   },
   "devDependencies": {
