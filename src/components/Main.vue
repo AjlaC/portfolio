@@ -117,12 +117,14 @@
           <div class="swiper-pagination" slot="pagination"></div>
           <!-- ********FIRST cover***********-->
            <swiper-slide>
-            <b-card @click="show('share-it')" title="Share It" class="m-3" img-src="static/images/shareit-cover.png" img-alt="Image" img-top tag="article">
+            <b-link href="/share-it">
+            <b-card title="Share It" class="m-3" img-src="static/images/shareit-cover.png" img-alt="Image" img-top tag="article">
               <p class="card-text">
                 UX/UI Design<br>
                 Mobile application design
               </p>
             </b-card>
+            </b-link>
           </swiper-slide>
          
 
@@ -339,6 +341,9 @@
                <div class="col-12 col-sm-9">
                   <b-img src="/static/images/muffin-header.png" thumbnail fluid/>
                <p>DESCRIPTION COMING SHORTLY!</p>
+
+               <iframe src="https://player.vimeo.com/video/323536599" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/323536599">Muffin or Chihuahua&mdash;Educative Museum Experience about Machine Learning</a> from <a href="https://vimeo.com/user3478076">Daniel Roeven</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                </div>
           </div>
 
@@ -393,14 +398,6 @@
                <div class="col-12 col-sm-9">
                 <h4>The Design Process</h4>
                 The process was performed in several stages such as research phase, ideation phase, prototyping phase, evaluation phase, and implementation phase.
-                <br>The <b>research phase</b> was initiated with interview results from a previous similiar study from the year before, that I reviewed and collected the most 
-                common answers in order to structure them and establish the first requirements. I also performed interviews that included questions regarding the current dashboard
-                but also general questions about their needs and areas of interest. The results from those interviews were added to the requirements list. 
-                <br> During the <b> ideation phase</b> I held two brainstorming workshops with other summer worker collegues, one having the focus of generating new use cases and types of information that could be potentially 
-                interesting, and the other one focusing on the established requiremets. 
-                <br> From those results I could continue with the <b>prototyping phase</b> and create two different prototypes: paper wireframes, and hi-fi look-and-feel mockup that followed the company's brand guidelines.
-                <br> A quick <b> evaluation </b> of the proposed mock-up was performed together with the stakeholders and after a few changes I <b>implemented</b> the structure of the dashboard, as well as a few graphs and all the placeholders.
-       
               <br><br>
                 The core idea for the new internal dashboard is that it would consist of two versions, one which has a slide-show like structure suitable for the info TV-screen, and one desktop version with a sidebar navigation.
                 <b-img src="/static/images/rotatingscreen.png" thumbnail fluid/>
