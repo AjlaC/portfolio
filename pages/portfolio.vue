@@ -30,19 +30,19 @@
           </nuxt-link>
         </b-col>
       </b-row>
-      <b-row class="m-4">
-        <b-col md="6" sm="12">
-          <nuxt-link to="/portfolio/remote-classroom">
-            <b-card title="Remote Classroom" img-src="~assets/rc-cover.png">
-              <p class="card-text">
-                UX/TUI Design<br />
-                Interactive Game Exhibition
-              </p>
-            </b-card>
-          </nuxt-link>
-        </b-col>
-        <b-col md="6" sm="0"> </b-col>
-      </b-row>
+      <!-- <b-row class="m-4"> -->
+      <!--   <b-col md="6" sm="12"> -->
+      <!--     <nuxt-link to="/portfolio/100-days-of-ui"> -->
+      <!--       <b-card title="100 Days of UI" img-src="~assets/100-cover.png"> -->
+      <!--         <p class="card-text"> -->
+      <!--           UX/TUI Design<br /> -->
+      <!--           Interactive Game Exhibition -->
+      <!--         </p> -->
+      <!--       </b-card> -->
+      <!--     </nuxt-link> -->
+      <!--   </b-col> -->
+      <!--   <b-col md="6" sm="0"> </b-col> -->
+      <!-- </b-row> -->
 
       <b-row class="m-4">
         <b-col>
@@ -50,6 +50,16 @@
         </b-col>
       </b-row>
       <b-row class="m-4">
+        <b-col md="6" sm="12">
+          <nuxt-link to="/portfolio/formLoupe">
+            <b-card title="FormLoupe" img-src="~assets/cybersketch-cover.png">
+              <p class="card-text">
+                UX/TUI Design<br />
+                Mixed Reality Retail Experience
+              </p>
+            </b-card>
+          </nuxt-link>
+        </b-col>
         <b-col md="6" sm="12">
           <nuxt-link to="/portfolio/cybersketch">
             <b-card title="CyberSketch" img-src="~assets/cybersketch-cover.png">
@@ -60,7 +70,6 @@
             </b-card>
           </nuxt-link>
         </b-col>
-        <b-col md="6" sm="12"> </b-col>
       </b-row>
 
       <b-row class="m-4">
