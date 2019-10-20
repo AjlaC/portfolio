@@ -91,6 +91,7 @@
 <script>
 export default {
   name: 'App',
+  scrollToTop: true,
   components: {},
   data() {
     return {
@@ -145,27 +146,12 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth
       this.window.height = window.innerHeight
-    },
-    show(name) {
-      this.currentModal = name
-      this.$modal.show(name)
-    },
-    hide() {
-      this.$modal.hide(this.currentModal)
-    },
-    changeTab(num) {
-      this.tab = num
     }
   }
 }
 </script>
 
 <style lang="scss">
-@media (orientation: landscape) {
-  width: 75vw;
-  margin: 0 auto;
-}
-
 #back-button {
   border: 1px solid black;
   align-self: center;
