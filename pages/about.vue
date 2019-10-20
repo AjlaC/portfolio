@@ -60,7 +60,7 @@
 <script>
 import navbar from '~/components/navbar.vue'
 export default {
-  name: 'App',
+  name: 'about',
   components: { navbar },
   data() {
     return {
@@ -68,8 +68,6 @@ export default {
         width: 0,
         height: 0
       },
-      tab: 1,
-      currentModal: '',
       items: [
         {
           tag: '2017-2019',
@@ -93,12 +91,7 @@ export default {
           type: 'circle',
           content: 'Arts Programme in High School'
         }
-      ],
-      form: {
-        email: '',
-        topic: '',
-        text: ''
-      }
+      ]
     }
   },
   created() {
@@ -115,16 +108,6 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth
       this.window.height = window.innerHeight
-    },
-    show(name) {
-      this.currentModal = name
-      this.$modal.show(name)
-    },
-    hide() {
-      this.$modal.hide(this.currentModal)
-    },
-    changeTab(num) {
-      this.tab = num
     }
   }
 }
@@ -174,13 +157,19 @@ export default {
 }
 
 .body-background {
+  @media (orientation: portrait) {
+    background-color: white;
+  }
   background-clip: content-box;
-  background: url('https://github.com/AjlaC/portfolio/blob/master/background_ajla_full.png?raw=true')
-    no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @media (orientation: landscape) {
+    background: url('https://github.com/AjlaC/portfolio/blob/master/background_ajla_full.png?raw=true')
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
   min-height: 100%;
   min-width: 1024px;
   /* Set up proportionate scaling */

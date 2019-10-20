@@ -1,9 +1,6 @@
 <template>
   <div id="app">
     <div class="row m-4">
-      <b-button variant="outline" to="/" id="back-button"></b-button>
-    </div>
-    <div class="row m-4">
       <h2 class="special-font">Share It</h2>
     </div>
     <div class="row m-3">

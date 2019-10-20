@@ -10,10 +10,12 @@
         <div class="col-md-6">
           <b-media>
             <div class="contact-social-group m-4">
-              <img
-                class="social-icon-large"
-                src="https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg"
-              />
+              <a href="mailto:cano.ajla@gmail.com">
+                <img
+                  class="social-icon-large"
+                  src="https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg"
+                />
+              </a>
               <a href="https://instagram.com/ajlascreations">
                 <img
                   class="social-icon-large"
@@ -37,44 +39,13 @@
 <script>
 import navbar from '~/components/navbar.vue'
 export default {
-  name: 'App',
+  name: 'contact',
   components: { navbar },
   data() {
     return {
       window: {
         width: 0,
         height: 0
-      },
-      tab: 1,
-      currentModal: '',
-      items: [
-        {
-          tag: '2017-2019',
-          content: 'M.SC. Interaction Design and Technologies at Chalmers'
-        },
-        {
-          tag: '2014-2017',
-          color: '#dcdcdc',
-          type: 'circle',
-          content: 'B.Sc. Computer Science and Engineering at Chalmers'
-        },
-        {
-          tag: '2013-2014',
-          color: '#dcdcdc',
-          type: 'circle',
-          content: 'Engineering Foundation Year at Chalmers'
-        },
-        {
-          tag: '2010-2013',
-          color: '#dcdcdc',
-          type: 'circle',
-          content: 'Arts Programme in High School'
-        }
-      ],
-      form: {
-        email: '',
-        topic: '',
-        text: ''
       }
     }
   },
@@ -92,16 +63,6 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth
       this.window.height = window.innerHeight
-    },
-    show(name) {
-      this.currentModal = name
-      this.$modal.show(name)
-    },
-    hide() {
-      this.$modal.hide(this.currentModal)
-    },
-    changeTab(num) {
-      this.tab = num
     }
   }
 }
