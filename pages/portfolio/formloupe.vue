@@ -23,7 +23,7 @@
         automotive industry, food and drink stores, etc. This particular
         prototype allows the users to plan and design rooms and furniture
         according to own needs and wishes. However, thanks to the nature of
-        constructors, Formloupe can be adjusted to other types of stores such
+        configurators, Formloupe can be adjusted to other types of stores such
         fashion stores, or automotive stores. The time frame of this research
         project was six months, full-time, in partnership with
         <a target="_blank" href="https://danielroeven.com/"> Daniel Roeven.</a>
@@ -87,6 +87,8 @@
         This was the final phase of the process where we chose one use case and
         made a functioning stand-alone prototype.
         <b-img src="~assets/prototype-formloupe.jpg" thumbnail fluid />
+        <b-img src="~assets/formloupe-ui.png" thumbnail fluid />
+        <b-img src="~assets/formloupe-tui.png" thumbnail fluid />
       </div>
 
       <div class="col-12 col-sm-9">

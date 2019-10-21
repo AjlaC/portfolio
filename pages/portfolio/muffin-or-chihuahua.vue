@@ -17,7 +17,7 @@
           The installation was displayed at Universeum, a science museum in
           Gothenburg. The experience was received well by both the audience and
           Universeum and we were invited back for another exhibition which was a
-          starting point for further developement.
+          starting point for further development.
         </div>
         <br />
         <div class="resp-container">
