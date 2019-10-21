@@ -10,7 +10,7 @@
         <div class="col-sm-6">
           <b-img
             class="profile-pic img-thumbnail"
-            src="~assets/photoofme.png"
+            src="~assets/new-profile1.png"
           ></b-img>
         </div>
       </div>
@@ -33,6 +33,12 @@
             enjoy is the eagerness to solve a problem which can then influence
             the user in a positive and productive way.
           </div>
+          <br />
+          <br />
+          Some of my tools consist of:
+          <b-img src="~assets/tools.png" fluid style="width:90%;" />
+          <br />
+          <br />
         </div>
         <div class="col-sm-6">
           <b-jumbotron header=" " lead="My journey into Interaction Design">

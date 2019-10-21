@@ -13,8 +13,8 @@
           <nuxt-link to="/portfolio/share-it">
             <b-card title="Share-it" img-src="~assets/shareit-cover.png">
               <p class="card-text">
-                UX/TUI Design<br />
-                Interactive Game Exhibition
+                UX/UI Design<br />
+                Mobile Interface Design
               </p>
             </b-card>
           </nuxt-link>
@@ -24,7 +24,7 @@
             <b-card title="Tork EasyCube" img-src="~assets/easycube-cover.png">
               <p class="card-text">
                 UX/UI Design & Front-end dev<br />
-                Information Visualization
+                Dashboard Information Visualization
               </p>
             </b-card>
           </nuxt-link>
@@ -65,7 +65,7 @@
             <b-card title="CyberSketch" img-src="~assets/cybersketch-cover.png">
               <p class="card-text">
                 UX/TUI Design<br />
-                Interactive Game Exhibition
+                3D Sketching tool in VR
               </p>
             </b-card>
           </nuxt-link>
@@ -99,7 +99,7 @@
             >
               <p class="card-text">
                 UX/TUI Design<br />
-                Interactive Game Exhibition
+                Tangible Office Planner
               </p>
             </b-card>
           </nuxt-link>
