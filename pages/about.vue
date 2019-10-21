@@ -19,7 +19,8 @@
           <div class="text">
             I'm a Gothenburg based UX engineer and Interaction designer who is
             passionate about solving real-life problems between people and
-            technology, using interaction design as my main tool.
+            technology, using interaction design as my main tool. Right now I
+            work as an Interaction Design Consultant at ESSIQ in Gothenburg.
             <br />
             <br />My main goal when designing is to build a better understanding
             between the user and the product while at the same time creating
@@ -33,12 +34,6 @@
             enjoy is the eagerness to solve a problem which can then influence
             the user in a positive and productive way.
           </div>
-          <br />
-          <br />
-          Some of my tools consist of:
-          <b-img src="~assets/tools.png" fluid style="width:90%;" />
-          <br />
-          <br />
         </div>
         <div class="col-sm-6">
           <b-jumbotron header=" " lead="My journey into Interaction Design">
@@ -57,6 +52,14 @@
             </a>
           </div>
           <br /><br />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Some of my tools consist of:</h4>
+          <b-img id="toolsimg" src="~assets/tools.png" fluid />
+          <br />
+          <br />
         </div>
       </div>
     </b-container>
@@ -118,3 +121,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+#toolsimg.img-fluid {
+  width: 50%;
+}
+
+@media (orientation: portrait) {
+  #toolsimg.img-fluid {
+    width: 100%;
+  }
+}
+</style>
