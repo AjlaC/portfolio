@@ -236,70 +236,34 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
-
-@media (orientation: landscape) {
-  width: 75vw;
-  margin: 0 auto;
+<script>
+export default {
+  name: 'App',
+  scrollToTop: true,
+  components: {},
+  data() {
+    return {
+      window: {
+        width: 0,
+        height: 0
+      }
+    }
+  },
+  created() {
+    if (process.browser) {
+      // eslint-disable-next-line
+      window.addEventListener('resize', this.handleResize)
+      this.handleResize()
+    }
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      this.window.width = window.innerWidth
+      this.window.height = window.innerHeight
+    }
+  }
 }
-
-#back-button {
-  border: 1px solid black;
-  align-self: center;
-}
-
-#back-button:after {
-  content: 'Back to portfolio';
-}
-
-.navbar {
-  background-color: transparent !important;
-}
-
-.bold-p {
-  font-weight: 500;
-}
-
-.small-italic {
-  font-size: 13px;
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.56);
-}
-
-.row {
-  justify-content: center;
-}
-
-.highlight-background {
-  background-color: rgba(195, 109, 160, 0.36);
-}
-
-.col-form-label {
-  float: left;
-}
-
-.body-background {
-  background-clip: content-box;
-  background: url('https://github.com/AjlaC/portfolio/blob/master/background_ajla_full.png?raw=true')
-    no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 100%;
-  min-width: 1024px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.special-font {
-  color: rgba(0, 0, 0, 0.87);
-  font-family: 'Expletus Sans', cursive;
-}
-</style>
+</script>

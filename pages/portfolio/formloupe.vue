@@ -167,6 +167,7 @@
 <script>
 export default {
   name: 'formLoupe',
+  scrollToTop: true,
   components: {},
   data() {
     return {

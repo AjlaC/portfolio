@@ -32,11 +32,6 @@
               focused and process driven when it comes to powerful and elegant
               technology.
             </p>
-            <div class="container p-4">
-              <a class="gradient-button">
-                <span>Contact</span>
-              </a>
-            </div>
           </b-jumbotron>
           <div class="social-group" v-if="window.width >= 767">
             <a href="mailto:ajla@email.com">

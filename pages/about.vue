@@ -45,7 +45,7 @@
             <a
               class="gradient-button"
               target="_blank"
-              href="/static/pdf/Ajla-CV-v19.pdf"
+              href="https://github.com/AjlaC/portfolio/raw/master/static/pdf/Ajla-CV-v19.pdf"
             >
               <span>Open Resume</span>
             </a>
@@ -112,10 +112,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@media (orientation: landscape) {
-  width: 75vw;
-  margin: 0 auto;
-}
-</style>
