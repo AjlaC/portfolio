@@ -51,8 +51,8 @@
       </b-row>
       <b-row class="m-4">
         <b-col md="6" sm="12">
-          <nuxt-link to="/portfolio/formLoupe">
-            <b-card title="FormLoupe" img-src="~assets/cybersketch-cover.png">
+          <nuxt-link to="/portfolio/formloupe">
+            <b-card title="FormLoupe" img-src="~assets/formloupe2-cover.png">
               <p class="card-text">
                 UX/TUI Design<br />
                 Mixed Reality Retail Experience
@@ -143,8 +143,6 @@ export default {
 
 <style lang="scss">
 @media (orientation: landscape) {
-  width: 75vw;
-  margin: 0 auto;
 }
 
 @media (orientation: portrait) {
