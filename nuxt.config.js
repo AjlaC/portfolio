@@ -33,7 +33,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{src: '~/plugins/light-timeline', ssr:false}],
+  plugins: [{src: '~/plugins/light-timeline', mode: 'client'}],
   /*
    ** Nuxt.js dev-modules
    */
