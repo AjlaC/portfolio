@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'formLoupe',
+  name: 'FormLoupe',
   scrollToTop: true,
   components: {},
   data() {

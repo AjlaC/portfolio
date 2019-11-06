@@ -39,7 +39,7 @@
 <script>
 import navbar from '~/components/navbar.vue'
 export default {
-  name: 'contact',
+  name: 'Contact',
   components: { navbar },
   data() {
     return {

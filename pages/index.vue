@@ -19,7 +19,7 @@
           </b-jumbotron>
         </div>
         <div class="col-md-6">
-          <b-jumbotron class="landing-profile m-5" key="3">
+          <b-jumbotron key="3" class="landing-profile m-5">
             <div class="row m-3">
               <div class="m-4">
                 <span class="header">Ajla</span>
@@ -33,10 +33,9 @@
               technology.
             </p>
           </b-jumbotron>
-          <div class="social-group" v-if="window.width >= 767">
+          <div v-if="window.width >= 767" class="social-group">
             <a href="mailto:ajla@email.com">
               <img
-                @click="tab = 4"
                 class="social-icon"
                 src="https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg"
               />
@@ -66,7 +65,7 @@
 import navbar from '~/components/navbar.vue'
 
 export default {
-  name: 'index',
+  name: 'Index',
   components: { navbar },
   data() {
     return {

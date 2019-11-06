@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <div class="row m-4">
-      <h2 class="special-font">Tork EasyCube</h2>
+      <h2 class="special-font">
+        Tork EasyCube
+      </h2>
     </div>
 
     <div class="row m-3">
@@ -44,10 +46,11 @@
         The process was performed in several stages such as research phase,
         ideation phase, prototyping phase, evaluation phase, and implementation
         phase.
-        <br /><br />
-        The core idea for the new internal dashboard is that it would consist of
-        two versions, one which has a slide-show like structure suitable for the
-        info TV-screen, and one desktop version with a sidebar navigation.
+        <br />
+        <br />The core idea for the new internal dashboard is that it would
+        consist of two versions, one which has a slide-show like structure
+        suitable for the info TV-screen, and one desktop version with a sidebar
+        navigation.
         <b-img src="~assets/rotatingscreen.png" thumbnail fluid />
       </div>
     </div>
@@ -90,24 +93,25 @@
           desktop version that includes the Self-service page.
         </div>
 
-        <b>Info-boxes</b><br />
-        Even though the dashboard itself was different from traditional one-page
-        dashboards in a way that it consisted of different pages that covered
-        various topics, I tried to keep a common thread on each page. The common
-        thread are the different motivational info-boxes on each page,
-        indicating that the information visualized is meaningful to the company
-        and that there might be new use cases and take aways they can gain from
-        the information.
+        <b>Info-boxes</b>
+        <br />Even though the dashboard itself was different from traditional
+        one-page dashboards in a way that it consisted of different pages that
+        covered various topics, I tried to keep a common thread on each page.
+        The common thread are the different motivational info-boxes on each
+        page, indicating that the information visualized is meaningful to the
+        company and that there might be new use cases and take aways they can
+        gain from the information.
         <b-img src="~assets/inspirationboxes.png" thumbnail fluid />
-        <br /><br />
-        <b>Scalability</b><br />
-        The dashboard was purposely designed with a sidebar navigation which
-        makes it possible to add more pages depending on requests and demands
-        from the users. Below is an example that was a suggested use case by the
-        company during the last week of summer work.
+        <br />
+        <br />
+        <b>Scalability</b>
+        <br />The dashboard was purposely designed with a sidebar navigation
+        which makes it possible to add more pages depending on requests and
+        demands from the users. Below is an example that was a suggested use
+        case by the company during the last week of summer work.
         <b-img src="~assets/BusinessTalk2.png" thumbnail fluid />
-        <br /><br />
-        The end result of this summer's project was an implemented general
+        <br />
+        <br />The end result of this summer's project was an implemented general
         structure of the dashboard with all the placeholders and description
         texts needed. A few graphs where implemented with D3.js but most of the
         data was not visualized yet. The project was handed off to the fulltime
@@ -118,7 +122,11 @@
     <div class="row m-3">
       <div class="col-12 col-sm-9">
         <h3 align="right">
-          / <span class="special-font">Ajla<b>Cano</b></span>
+          /
+          <span class="special-font">
+            Ajla
+            <b>Cano</b>
+          </span>
         </h3>
       </div>
     </div>

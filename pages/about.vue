@@ -69,8 +69,10 @@
 <script>
 import navbar from '~/components/navbar.vue'
 export default {
-  name: 'about',
-  components: { navbar },
+  name: 'About',
+  components: {
+    navbar
+  },
   data() {
     return {
       window: {

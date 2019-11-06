@@ -133,7 +133,7 @@
 
 <script>
 export default {
-  name: 'formloupe',
+  name: 'Formloupe',
   scrollToTop: true,
   components: {},
   data() {
