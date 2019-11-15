@@ -35,7 +35,7 @@
   }
 
   @media (orientation: landscape) {
-    background-color: rgba(255, 255, 255, 0.67) !important;
+    background-color: rgba(255, 255, 255, 0.87) !important;
   }
 }
 
@@ -239,4 +239,10 @@
 .special-font {
   color: rgba(0, 0, 0, 0.87);
   font-family: "Expletus Sans", cursive;
+}
+
+.project {
+  text-align: left;
+  margin: 0 auto;
+  width: 80%;
 }
