@@ -106,7 +106,6 @@
 
 <script>
 require("vue2-animate/dist/vue2-animate.min.css");
-import * as api from "../api";
 import navbar from "../components/navbar.vue";
 
 export default {

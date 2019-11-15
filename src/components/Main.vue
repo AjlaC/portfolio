@@ -64,7 +64,6 @@
 
 <script>
 require("vue2-animate/dist/vue2-animate.min.css");
-import * as api from "../api";
 
 import navbar from "../components/navbar.vue";
 
@@ -92,26 +91,6 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
-    },
-    show(name) {
-      this.currentModal = name;
-      this.$modal.show(name);
-    },
-    hide() {
-      this.$modal.hide(this.currentModal);
-    },
-    changeTab(num) {
-      this.tab = num;
-    },
-    async sendEmail() {
-      var response = await api.sendEmail(
-        this.form.email,
-        this.form.topic,
-        "Hello, someone showed interest! " + this.form.text
-      );
-      if (response.status === 200) {
-        window.location.reload();
-      }
     }
   }
 };
