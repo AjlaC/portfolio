@@ -11,7 +11,7 @@
           <h3 class="special-font" style="text-align: center;">
             Mixed Reality Experience for Retail Stores
           </h3>
-          <b-img src="~assets/formloupe-header.png" thumbnail fluid />
+          <b-img src="/static/images/formloupe-header.png" thumbnail fluid />
           <br />
           <br />
         </div>
@@ -65,7 +65,11 @@
           The design process was divided into three different stages: research
           into the state-of-the-art of relevant technology in retail stores,
           getting the right design, and lastly getting the design right.
-          <b-img src="~assets/formloupe-designprocess.png" thumbnail fluid />
+          <b-img
+            src="/static/images/formloupe-designprocess.png"
+            thumbnail
+            fluid
+          />
           <br />
           <h4>Reaserch into state-of-the-art</h4>
           For this stage we performed a research study and collected nearly 100
@@ -73,9 +77,13 @@
           landscape in order to get a better understanding of the
           state-of-the-art. The framework can be found
           <a target="_blank" href="https://mr-in-retail.github.io"> here.</a>
-          <b-img src="~assets/KJcategories.png" thumbnail fluid />
+          <b-img src="/static/images/KJcategories.png" thumbnail fluid />
           Some of the most common categories we discovered can be seen below:
-          <b-img src="~assets/formloupe-categories.png" thumbnail fluid />
+          <b-img
+            src="/static/images/formloupe-categories.png"
+            thumbnail
+            fluid
+          />
           <br />
           <br />
           <h4>Getting the <b>right</b> design</h4>
@@ -84,15 +92,15 @@
           could gather take aways that influenced our last phase. In total we
           did two concepts within the fashion industry, and two concepts within
           the interior design industry.
-          <b-img src="~assets/sprints-formloupe.png" thumbnail fluid />
+          <b-img src="/static/images/sprints-formloupe.png" thumbnail fluid />
           <br />
           <br />
           <h4>Getting the <b>design</b> right</h4>
           This was the final phase of the process where we chose one use case
           and made a functioning stand-alone prototype.
-          <b-img src="~assets/prototype-formloupe.jpg" thumbnail fluid />
-          <b-img src="~assets/formloupe-ui.png" thumbnail fluid />
-          <b-img src="~assets/formloupe-tui.png" thumbnail fluid />
+          <b-img src="/static/images/prototype-formloupe.jpg" thumbnail fluid />
+          <b-img src="/static/images/formloupe-ui.png" thumbnail fluid />
+          <b-img src="/static/images/formloupe-tui.png" thumbnail fluid />
         </div>
 
         <div class="col-12 col-sm-9">
@@ -123,7 +131,7 @@
           <h2>Outcome</h2>
           From our user tests and evaluations we can summarize the outcome of
           Formloupe in a few words.
-          <b-img src="~assets/outcome-formloupe.png" thumbnail fluid />
+          <b-img src="/static/images/outcome-formloupe.png" thumbnail fluid />
         </div>
       </div>
 
