@@ -10,6 +10,7 @@ import StatusTable from "../components/Statustable.vue";
 import EasyCube from "../components/Easycube.vue";
 import Cybersketch from "../components/Cybersketch.vue";
 import Muffin from "../components/Muffin.vue";
+import Formloupe from "../components/Formloupe.vue";
 
 import Contact from "../components/Contact.vue";
 Vue.use(Router);
@@ -55,7 +56,7 @@ let router = new Router({
     },
     {
       path: "/portfolio/formloupe",
-      component: Shareit
+      component: Formloupe
     },
     {
       path: "/contact",
