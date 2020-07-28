@@ -46,7 +46,7 @@
             <a
               class="gradient-button"
               target="_blank"
-              href="https://github.com/AjlaC/portfolio/raw/master/static/pdf/Ajla-CV-v19.pdf"
+              href="https://github.com/AjlaC/portfolio/raw/master/static/pdf/CV_Ajla_v_20.pdf"
             >
               <span>Open Resume</span>
             </a>
@@ -72,38 +72,44 @@ require("vue2-animate/dist/vue2-animate.min.css");
 export default {
   name: "About",
   components: {
-    navbar
+    navbar,
   },
   data() {
     return {
       window: {
         width: 0,
-        height: 0
+        height: 0,
       },
       items: [
         {
+          tag: "2019-",
+          content: "Professional consulting UX Engineer",
+        },
+        {
           tag: "2017-2019",
-          content: "M.SC. Interaction Design and Technologies at Chalmers"
+          color: "#dcdcdc",
+          type: "circle",
+          content: "M.SC. Interaction Design and Technologies at Chalmers",
         },
         {
           tag: "2014-2017",
           color: "#dcdcdc",
           type: "circle",
-          content: "B.Sc. Computer Science and Engineering at Chalmers"
+          content: "B.Sc. Computer Science and Engineering at Chalmers",
         },
         {
           tag: "2013-2014",
           color: "#dcdcdc",
           type: "circle",
-          content: "Engineering Foundation Year at Chalmers"
+          content: "Engineering Foundation Year at Chalmers",
         },
         {
           tag: "2010-2013",
           color: "#dcdcdc",
           type: "circle",
-          content: "Arts Programme in High School"
-        }
-      ]
+          content: "Arts Programme in High School",
+        },
+      ],
     };
   },
   created() {
@@ -120,8 +126,8 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
-    }
-  }
+    },
+  },
 };
 </script>
 
