@@ -18783,7 +18783,12 @@ __webpack_require__(9);
         height: 0
       },
       items: [{
+        tag: "2019-",
+        content: "Professional consulting UX Engineer"
+      }, {
         tag: "2017-2019",
+        color: "#dcdcdc",
+        type: "circle",
         content: "M.SC. Interaction Design and Technologies at Chalmers"
       }, {
         tag: "2014-2017",
@@ -34962,7 +34967,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_About_vue__ = __webpack_require__(58);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2187b34e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_About_vue__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5e8625d6_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_About_vue__ = __webpack_require__(229);
 function injectStyle (ssrContext) {
   __webpack_require__(227)
 }
@@ -34977,12 +34982,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-2187b34e"
+var __vue_scopeId__ = "data-v-5e8625d6"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_About_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2187b34e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_About_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5e8625d6_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_About_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -35003,7 +35008,7 @@ var content = __webpack_require__(228);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(8)("0e19ab2d", content, true, {});
+var update = __webpack_require__(8)("065a1bac", content, true, {});
 
 /***/ }),
 /* 228 */
@@ -35014,7 +35019,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "#toolsimg.img-fluid[data-v-2187b34e]{width:50%}@media (orientation:portrait){#toolsimg.img-fluid[data-v-2187b34e]{width:100%}}", ""]);
+exports.push([module.i, "#toolsimg.img-fluid[data-v-5e8625d6]{width:50%}@media (orientation:portrait){#toolsimg.img-fluid[data-v-5e8625d6]{width:100%}}", ""]);
 
 // exports
 
@@ -35024,7 +35029,7 @@ exports.push([module.i, "#toolsimg.img-fluid[data-v-2187b34e]{width:50%}@media (
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('navbar'),_vm._v(" "),_c('transition',{attrs:{"name":"fadeRightBig"}},[_c('div',{staticClass:"body-background clip2"})]),_vm._v(" "),_c('b-container',{key:"3",staticClass:"container-fluid",attrs:{"fluid":""}},[_c('h1',[_vm._v("About me")]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-sm-6"},[_c('b-img',{staticClass:"profile-pic img-thumbnail",attrs:{"src":"/static/images/new-profile1.png"}})],1)]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-sm-6 about"},[_c('div',{staticClass:"text"},[_vm._v("\n          I'm a Gothenburg based UX engineer and Interaction designer who is\n          passionate about solving real-life problems between people and\n          technology, using interaction design as my main tool. Right now I\n          work as an Interaction Design Consultant at ESSIQ in Gothenburg.\n          "),_c('br'),_vm._v(" "),_c('br'),_vm._v("My main goal when designing is to build a better understanding\n          between the user and the product while at the same time creating\n          engaging experiences. I constantly try to challenge my creativity\n          around existing constraints in a project and see that as a\n          opportunity to learn even more and grow as an interaction designer.\n          "),_c('br'),_vm._v(" "),_c('br'),_vm._v("During a design process, my favorite parts are the challenges\n          that come with the problem solving. I’m a believer in finding the\n          best solutions when getting out of your comfort zone. A feeling I\n          enjoy is the eagerness to solve a problem which can then influence\n          the user in a positive and productive way.\n        ")])]),_vm._v(" "),_c('div',{staticClass:"col-sm-6"},[_c('b-jumbotron',{attrs:{"header":" ","lead":"My journey into Interaction Design"}},[_c('light-timeline',{attrs:{"items":_vm.items}})],1),_vm._v(" "),_c('p',{staticClass:"small-italic"},[_vm._v("\n          For more detailed information:\n        ")]),_vm._v(" "),_c('div',{staticClass:"container"},[_c('a',{staticClass:"gradient-button",attrs:{"target":"_blank","href":"https://github.com/AjlaC/portfolio/raw/master/static/pdf/Ajla-CV-v19.pdf"}},[_c('span',[_vm._v("Open Resume")])])]),_vm._v(" "),_c('br'),_c('br')],1)]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col"},[_c('h4',[_vm._v("Some of my tools consist of:")]),_vm._v(" "),_c('b-img',{attrs:{"id":"toolsimg","src":"/static/images/tools.png","fluid":""}}),_vm._v(" "),_c('br'),_vm._v(" "),_c('br')],1)])])],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('navbar'),_vm._v(" "),_c('transition',{attrs:{"name":"fadeRightBig"}},[_c('div',{staticClass:"body-background clip2"})]),_vm._v(" "),_c('b-container',{key:"3",staticClass:"container-fluid",attrs:{"fluid":""}},[_c('h1',[_vm._v("About me")]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-sm-6"},[_c('b-img',{staticClass:"profile-pic img-thumbnail",attrs:{"src":"/static/images/new-profile1.png"}})],1)]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-sm-6 about"},[_c('div',{staticClass:"text"},[_vm._v("\n          I'm a Gothenburg based UX engineer and Interaction designer who is\n          passionate about solving real-life problems between people and\n          technology, using interaction design as my main tool. Right now I\n          work as an Interaction Design Consultant at ESSIQ in Gothenburg.\n          "),_c('br'),_vm._v(" "),_c('br'),_vm._v("My main goal when designing is to build a better understanding\n          between the user and the product while at the same time creating\n          engaging experiences. I constantly try to challenge my creativity\n          around existing constraints in a project and see that as a\n          opportunity to learn even more and grow as an interaction designer.\n          "),_c('br'),_vm._v(" "),_c('br'),_vm._v("During a design process, my favorite parts are the challenges\n          that come with the problem solving. I’m a believer in finding the\n          best solutions when getting out of your comfort zone. A feeling I\n          enjoy is the eagerness to solve a problem which can then influence\n          the user in a positive and productive way.\n        ")])]),_vm._v(" "),_c('div',{staticClass:"col-sm-6"},[_c('b-jumbotron',{attrs:{"header":" ","lead":"My journey into Interaction Design"}},[_c('light-timeline',{attrs:{"items":_vm.items}})],1),_vm._v(" "),_c('p',{staticClass:"small-italic"},[_vm._v("\n          For more detailed information:\n        ")]),_vm._v(" "),_c('div',{staticClass:"container"},[_c('a',{staticClass:"gradient-button",attrs:{"target":"_blank","href":"https://github.com/AjlaC/portfolio/raw/master/static/pdf/CV_Ajla_v_20.pdf"}},[_c('span',[_vm._v("Open Resume")])])]),_vm._v(" "),_c('br'),_c('br')],1)]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col"},[_c('h4',[_vm._v("Some of my tools consist of:")]),_vm._v(" "),_c('b-img',{attrs:{"id":"toolsimg","src":"/static/images/tools.png","fluid":""}}),_vm._v(" "),_c('br'),_vm._v(" "),_c('br')],1)])])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
