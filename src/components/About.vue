@@ -46,7 +46,7 @@
             <a
               class="gradient-button"
               target="_blank"
-              href="https://github.com/AjlaC/portfolio/raw/master/static/pdf/CV_Ajla_v_20.pdf"
+              href="https://github.com/AjlaC/portfolio/raw/netlify/static/pdf/CV_Ajla_v_20.pdf"
             >
               <span>Open Resume</span>
             </a>
