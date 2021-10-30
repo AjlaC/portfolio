@@ -14,9 +14,7 @@
             lead="Recognizing the need is the primary condition for design."
             class="quote m-3 p-5"
           >
-            <p class="bold-p">
-              - Charles Eames
-            </p>
+            <p class="bold-p">- Charles Eames</p>
           </b-jumbotron>
         </div>
         <div class="col-md-6">
@@ -29,9 +27,10 @@
             </div>
             <p>
               I'm Ajla Cano, a Gothenburg based
-              <span class="highlight-background">UX Engineer</span>. I'm design
-              focused and process driven when it comes to powerful and elegant
-              technology.
+              <span class="highlight-background"
+                >Product Owner and UX Engineer</span
+              >. I'm design focused and process driven when it comes to powerful
+              and elegant technology.
             </p>
           </b-jumbotron>
           <div class="social-group" v-if="window.width >= 767">
@@ -45,14 +44,14 @@
             <a href="https://instagram.com/ajlascreations">
               <img
                 class="social-icon"
-                src="https://cdn.rawgit.com/emilundg/7d2df0d4f97fa81e52486093e2decc94/raw/f7e5664b835dc1038630760bed94959ba678da8d/instagram.svg"/>
+                src="https://cdn.rawgit.com/emilundg/7d2df0d4f97fa81e52486093e2decc94/raw/f7e5664b835dc1038630760bed94959ba678da8d/instagram.svg" />
               <br
             /></a>
 
             <a href="https://www.linkedin.com/in/ajla-cano/">
               <img
                 class="social-icon"
-                src="https://cdn.rawgit.com/emilundg/cbbfd2b1fb856cb680eea5d19460e45e/raw/f98cb8c2aeaf448e13372d23b7643e363c8a59f4/Linkedin.svg"/>
+                src="https://cdn.rawgit.com/emilundg/cbbfd2b1fb856cb680eea5d19460e45e/raw/f98cb8c2aeaf448e13372d23b7643e363c8a59f4/Linkedin.svg" />
               <br
             /></a>
           </div>
@@ -70,14 +69,14 @@ import navbar from "../components/navbar.vue";
 export default {
   name: "app",
   components: {
-    navbar
+    navbar,
   },
   data() {
     return {
       window: {
         width: 0,
-        height: 0
-      }
+        height: 0,
+      },
     };
   },
   created() {
@@ -91,8 +90,8 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
-    }
-  }
+    },
+  },
 };
 </script>
 
