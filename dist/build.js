@@ -1353,7 +1353,7 @@ function applyToTag (styleElement, obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_003ca702_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_navbar_vue__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_db1becae_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_navbar_vue__ = __webpack_require__(224);
 var normalizeComponent = __webpack_require__(5)
 /* script */
 var __vue_script__ = null
@@ -1369,7 +1369,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __vue_script__,
-  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_003ca702_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_navbar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_db1becae_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_navbar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -18660,7 +18660,6 @@ var PopOver = function (_ToolTip) {
 //
 //
 //
-//
 
 __webpack_require__(9);
 
@@ -34883,7 +34882,7 @@ if (inBrowser && window.Vue) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Main_vue__ = __webpack_require__(57);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_54a977a2_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Main_vue__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5c5734b4_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Main_vue__ = __webpack_require__(225);
 function injectStyle (ssrContext) {
   __webpack_require__(222)
 }
@@ -34903,7 +34902,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Main_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_54a977a2_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Main_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5c5734b4_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Main_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -34924,7 +34923,7 @@ var content = __webpack_require__(223);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(8)("3e5a6820", content, true, {});
+var update = __webpack_require__(8)("d1f094aa", content, true, {});
 
 /***/ }),
 /* 223 */
@@ -34945,7 +34944,7 @@ exports.push([module.i, "", ""]);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-navbar',{staticClass:"b-navbar",attrs:{"sticky":true,"toggleable":"md","type":"light","variant":"light"}},[_c('b-navbar-brand',{staticStyle:{"color":"rgba(255,255,255,0.87)"},attrs:{"to":"/"}},[_c('span',{staticClass:"special-font"},[_vm._v("Ajla"),_c('b',[_vm._v("Cano")])])]),_vm._v(" "),_c('b-navbar-toggle',{attrs:{"target":"nav_collapse"}}),_vm._v(" "),_c('b-collapse',{attrs:{"id":"nav_collapse","is-nav":""}},[_c('b-navbar-nav',{staticClass:"ml-auto"},[_c('b-nav-item',{staticClass:"button",attrs:{"to":"/","exact":""}},[_vm._v("Home")]),_vm._v(" "),_c('b-nav-item',{staticClass:"button",attrs:{"to":"/about"}},[_vm._v("About me")]),_vm._v(" "),_c('b-nav-item',{staticClass:"button",attrs:{"to":"/portfolio"}},[_vm._v("Portfolio")]),_vm._v(" "),_c('b-nav-item',{staticClass:"button",attrs:{"to":"/contact"}},[_vm._v("Contact")])],1)],1)],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-navbar',{staticClass:"b-navbar",attrs:{"sticky":true,"toggleable":"md","type":"light","variant":"light"}},[_c('b-navbar-brand',{staticStyle:{"color":"rgba(255, 255, 255, 0.87)"},attrs:{"to":"/"}},[_c('span',{staticClass:"special-font"},[_vm._v("Ajla"),_c('b',[_vm._v("Cano")])])]),_vm._v(" "),_c('b-navbar-toggle',{attrs:{"target":"nav_collapse"}}),_vm._v(" "),_c('b-collapse',{attrs:{"id":"nav_collapse","is-nav":""}},[_c('b-navbar-nav',{staticClass:"ml-auto"},[_c('b-nav-item',{staticClass:"button",attrs:{"to":"/","exact":""}},[_vm._v("Home")]),_vm._v(" "),_c('b-nav-item',{staticClass:"button",attrs:{"to":"/portfolio"}},[_vm._v("Portfolio")]),_vm._v(" "),_c('b-nav-item',{staticClass:"button",attrs:{"to":"/contact"}},[_vm._v("Contact")])],1)],1)],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -34955,7 +34954,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('navbar'),_vm._v(" "),_c('transition',{attrs:{"name":"fadeLeftBig"}},[_c('div',{staticClass:"body-background clip1"})]),_vm._v(" "),_c('b-container',{key:"2",staticClass:"container-fluid",attrs:{"fluid":""}},[_c('div',{staticClass:"main row"},[_c('div',{staticClass:"left col-md-6"},[(_vm.window.width >= 767)?_c('b-jumbotron',{staticClass:"quote m-3 p-5",attrs:{"header":"“","lead":"Recognizing the need is the primary condition for design."}},[_c('p',{staticClass:"bold-p"},[_vm._v("\n            - Charles Eames\n          ")])]):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"col-md-6"},[_c('b-jumbotron',{key:"3",staticClass:"landing-profile m-5"},[_c('div',{staticClass:"row m-3"},[_c('div',{staticClass:"m-4"},[_c('span',{staticClass:"header"},[_vm._v("Ajla")]),_vm._v(" "),_c('span',{staticClass:"lead"},[_vm._v("Cano")])])]),_vm._v(" "),_c('p',[_vm._v("\n            I'm Ajla Cano, a Gothenburg based\n            "),_c('span',{staticClass:"highlight-background"},[_vm._v("UX Engineer")]),_vm._v(". I'm design\n            focused and process driven when it comes to powerful and elegant\n            technology.\n          ")])]),_vm._v(" "),(_vm.window.width >= 767)?_c('div',{staticClass:"social-group"},[_c('a',{attrs:{"href":"mailto:cano.ajla@gmail.com"}},[_c('img',{staticClass:"social-icon",attrs:{"src":"https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg"}})]),_vm._v(" "),_c('br'),_vm._v(" "),_c('a',{attrs:{"href":"https://instagram.com/ajlascreations"}},[_c('img',{staticClass:"social-icon",attrs:{"src":"https://cdn.rawgit.com/emilundg/7d2df0d4f97fa81e52486093e2decc94/raw/f7e5664b835dc1038630760bed94959ba678da8d/instagram.svg"}}),_vm._v(" "),_c('br')]),_vm._v(" "),_c('a',{attrs:{"href":"https://www.linkedin.com/in/ajla-cano/"}},[_c('img',{staticClass:"social-icon",attrs:{"src":"https://cdn.rawgit.com/emilundg/cbbfd2b1fb856cb680eea5d19460e45e/raw/f98cb8c2aeaf448e13372d23b7643e363c8a59f4/Linkedin.svg"}}),_vm._v(" "),_c('br')])]):_vm._e()],1)])])],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('navbar'),_vm._v(" "),_c('transition',{attrs:{"name":"fadeLeftBig"}},[_c('div',{staticClass:"body-background clip1"})]),_vm._v(" "),_c('b-container',{key:"2",staticClass:"container-fluid",attrs:{"fluid":""}},[_c('div',{staticClass:"main row"},[_c('div',{staticClass:"left col-md-6"},[(_vm.window.width >= 767)?_c('b-jumbotron',{staticClass:"quote m-3 p-5",attrs:{"header":"“","lead":"Recognizing the need is the primary condition for design."}},[_c('p',{staticClass:"bold-p"},[_vm._v("- Charles Eames")])]):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"col-md-6"},[_c('b-jumbotron',{key:"3",staticClass:"landing-profile m-5"},[_c('div',{staticClass:"row m-3"},[_c('div',{staticClass:"m-4"},[_c('span',{staticClass:"header"},[_vm._v("Ajla")]),_vm._v(" "),_c('span',{staticClass:"lead"},[_vm._v("Cano")])])]),_vm._v(" "),_c('p',[_vm._v("\n            I'm Ajla Cano, a Gothenburg based\n            "),_c('span',{staticClass:"highlight-background"},[_vm._v("Product Owner and UX Engineer")]),_vm._v(". I'm design focused and process driven when it comes to powerful\n            and elegant technology.\n          ")])]),_vm._v(" "),(_vm.window.width >= 767)?_c('div',{staticClass:"social-group"},[_c('a',{attrs:{"href":"mailto:cano.ajla@gmail.com"}},[_c('img',{staticClass:"social-icon",attrs:{"src":"https://cdn.rawgit.com/emilundg/a59d3d681244a46d8a3444cb3a5960e7/raw/73d3baf271553073fbaa560a9c261aeca0b318c8/Mail.svg"}})]),_vm._v(" "),_c('br'),_vm._v(" "),_c('a',{attrs:{"href":"https://instagram.com/ajlascreations"}},[_c('img',{staticClass:"social-icon",attrs:{"src":"https://cdn.rawgit.com/emilundg/7d2df0d4f97fa81e52486093e2decc94/raw/f7e5664b835dc1038630760bed94959ba678da8d/instagram.svg"}}),_vm._v(" "),_c('br')]),_vm._v(" "),_c('a',{attrs:{"href":"https://www.linkedin.com/in/ajla-cano/"}},[_c('img',{staticClass:"social-icon",attrs:{"src":"https://cdn.rawgit.com/emilundg/cbbfd2b1fb856cb680eea5d19460e45e/raw/f98cb8c2aeaf448e13372d23b7643e363c8a59f4/Linkedin.svg"}}),_vm._v(" "),_c('br')])]):_vm._e()],1)])])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
